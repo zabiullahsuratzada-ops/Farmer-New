@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Farmer Group - Leading in Quality for Best Food. Get in touch for quality organic and chemical fertilizers.">
+    <title>Contact - Farmer Group</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ============================================
+   FARMER GROUP CONTACT PAGE
+   Consistent with Homepage Design
+   ============================================ */
+
+        /* ---------- CSS Variables ---------- */
+        :root {
+            --primary-color: #9cc212;
+            --primary-dark: #87af26;
+            --secondary-color: #102e19;
+            --text-dark: #2e2e2e;
+            --text-light: #666666;
+            --white: #ffffff;
+            --black: #000000;
+            --gray-light: #f5f5f5;
+            --gray-medium: #ebebeb;
+            --font-primary: 'Poppins', Arial, sans-serif;
+            --font-secondary: 'Rubik', Arial, sans-serif;
+            --transition: all 0.3s ease;
+        }
+
+        /* ---------- Reset & Base Styles ---------- */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-secondary);
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+            overflow-x: hidden;
+            max-width: 1500px;
+            margin: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-primary);
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-white {
+            color: var(--white);
+        }
+
+        /* ---------- Top Bar ---------- */
+        .topbar {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        .topbar-widgets {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .topbar .row {
+            align-items: center;
+        }
+
+        .sidebar-left {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .sidebar-left .widget {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sidebar-left .svg-icon {
+            width: 16px;
+            height: 16px;
+            fill: var(--primary-color);
+        }
+
+        .sidebar-right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+
+        .sidebar-right ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        .sidebar-right ul li a {
+            color: var(--white);
+        }
+
+        .sidebar-right ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Social Icons */
+        .socials {
+            display: flex;
+            gap: 15px;
+        }
+
+        .socials li a {
+            color: var(--white);
+            font-size: 14px;
+        }
+
+        .socials li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* ---------- Header ---------- */
+        .site-header {
+            background-color: var(--white);
+            position: relative;
+            z-index: 1000;
+        }
+
+        .header-bar {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--gray-medium);
+        }
+
+        .header-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .site-logo {
+            flex: 0 0 auto;
+        }
+
+        .site-logo img {
+            height: 70px;
+        }
+
+        .site-title,
+        .site-description {
+            display: none;
+        }
+
+        /* Header Highlights */
+        .highlights {
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+        }
+
+        .highlights .widget {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .highlights .widget .pull-left {
+            text-align: right;
+        }
+
+        .highlights .widget .pull-left div:first-child {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .highlights .widget .pull-left div:last-child {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        .highlights .widget .pull-right .svg-icon {
+            width: 45px;
+            height: 45px;
+            fill: var(--primary-color);
+        }
+
+        /* ---------- Navigation ---------- */
+        .header-menu {
+            background-color: var(--secondary-color);
+        }
+
+        .site-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-nav .menu {
+            display: flex;
+            gap: 0;
+        }
+
+        .main-nav .menu>li {
+            position: relative;
+        }
+
+        .main-nav .menu>li>a {
+            display: block;
+            padding: 18px 25px;
+            color: var(--white);
+            font-weight: 500;
+            font-size: 15px;
+            transition: var(--transition);
+        }
+
+        .main-nav .menu>li>a:hover,
+        .main-nav .menu>li.current-menu-item>a {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Dropdown Menu */
+        .main-nav .menu>li .sub-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: var(--white);
+            min-width: 220px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: var(--transition);
+            z-index: 1000;
+        }
+
+        .main-nav .menu>li:hover .sub-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .main-nav .sub-menu li a {
+            display: block;
+            padding: 12px 20px;
+            color: var(--text-dark);
+            border-bottom: 1px solid var(--gray-medium);
+            font-size: 14px;
+        }
+
+        .main-nav .sub-menu li a:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Mobile Menu Toggle */
+        .navbar-toggle {
+            display: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .navbar-icon {
+            display: block;
+            width: 30px;
+            height: 20px;
+            position: relative;
+        }
+
+        .navbars-line,
+        .navbars-line::before,
+        .navbars-line::after {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: var(--secondary-color);
+            position: absolute;
+            transition: var(--transition);
+        }
+
+        .navbars-line {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .navbars-line::before {
+            content: '';
+            top: -8px;
+        }
+
+        .navbars-line::after {
+            content: '';
+            bottom: -8px;
+        }
+
+        /* ---------- Contact Page Hero ---------- */
+        .contact-hero {
+            background: linear-gradient(rgba(16, 46, 25, 0.85), rgba(16, 46, 25, 0.9)),
+                url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0 80px;
+            color: var(--white);
+            text-align: center;
+        }
+
+        .contact-hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .contact-hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary-color);
+        }
+
+        .breadcrumb span {
+            margin: 0 5px;
+        }
+
+        /* ---------- Contact Info Section ---------- */
+        .contact-info-section {
+            padding: 90px 0 60px;
+            background-color: var(--white);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 3px;
+            background-color: var(--primary-color);
+        }
+
+        .section-title p {
+            font-size: 17px;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 25px auto 0;
+        }
+
+        .contact-info-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .contact-info-card {
+            flex: 1;
+            min-width: 300px;
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            border: 1px solid var(--gray-medium);
+        }
+
+        .contact-info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        .contact-info-icon {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(156, 194, 18, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+        }
+
+        .contact-info-icon .svg-icon {
+            width: 35px;
+            height: 35px;
+            fill: var(--primary-color);
+        }
+
+        .contact-info-card h3 {
+            font-size: 22px;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .contact-info-card p {
+            color: var(--text-light);
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .contact-info-card a {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .contact-info-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* ---------- Contact Form Section ---------- */
+        .contact-form-section {
+            padding: 60px 0 90px;
+            background: linear-gradient(135deg, #f8fdf0 0%, #e8f5d6 100%);
+        }
+
+        .contact-form-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            align-items: flex-start;
+        }
+
+        .contact-form-left {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-form-left h3 {
+            font-size: 28px;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .contact-form-left p {
+            color: var(--text-light);
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .contact-details-list {
+            margin-top: 40px;
+        }
+
+        .contact-details-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .contact-details-list .icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .contact-details-list .icon .svg-icon {
+            width: 20px;
+            height: 20px;
+            fill: var(--white);
+        }
+
+        .contact-details-list .content h4 {
+            font-size: 18px;
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+
+        .contact-details-list .content p {
+            color: var(--text-light);
+            margin: 0;
+            font-size: 15px;
+        }
+
+        .contact-form-right {
+            flex: 1;
+            min-width: 300px;
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        .form-label {
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+            font-size: 15px;
+        }
+
+        .form-input,
+        .form-textarea {
+            padding: 14px 18px;
+            border: 1px solid var(--gray-medium);
+            border-radius: 5px;
+            font-family: var(--font-secondary);
+            font-size: 15px;
+            transition: var(--transition);
+            background-color: var(--white);
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(156, 194, 18, 0.1);
+        }
+
+        .form-textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            padding: 16px 35px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(156, 194, 18, 0.2);
+        }
+
+        .submit-btn .svg-icon {
+            width: 18px;
+            height: 18px;
+            fill: var(--white);
+        }
+
+        /* ---------- Map Section ---------- */
+        .map-section {
+            padding: 0 0 90px;
+        }
+
+        .map-wrapper {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            height: 500px;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 100%;
+            background-color: #e8f5d6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .map-placeholder {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .map-placeholder .svg-icon {
+            width: 80px;
+            height: 80px;
+            fill: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .map-placeholder h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        .map-placeholder p {
+            color: var(--text-light);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .map-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border-radius: 5px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .map-link:hover {
+            background-color: var(--primary-dark);
+            color: var(--white);
+        }
+
+        /* ---------- Footer Widgets ---------- */
+        .footer-widgets {
+            background-color: var(--secondary-color);
+            padding: 60px 0;
+            color: var(--white);
+        }
+
+        .footer-widgets .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer-col {
+            flex: 0 0 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col .widget-title {
+            font-size: 18px;
+            color: var(--white);
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .footer-col .logo {
+            margin-bottom: 20px;
+        }
+
+        .footer-col .logo img {
+            max-width: 200px;
+        }
+
+        /* Footer Menu */
+        .footer-menu ul {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-menu ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 15px;
+        }
+
+        .footer-menu ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Working Hours */
+        .working-hours .working {
+            margin-bottom: 20px;
+        }
+
+        .working-hours .working span {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .working-hours .working div {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* Newsletter */
+        .newsletter p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .newsletter-form input[type="email"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+        }
+
+        .newsletter-form input[type="email"]::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .newsletter-form button {
+            padding: 12px 25px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .newsletter-form button:hover {
+            background-color: var(--primary-dark);
+        }
+
+        /* ---------- Footer Copyright ---------- */
+        .site-footer {
+            background-color: #0a1f10;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .site-footer p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .site-footer a {
+            color: var(--primary-color);
+        }
+
+        /* ---------- Mobile Navigation ---------- */
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 100%;
+            background-color: var(--white);
+            z-index: 9999;
+            transition: left 0.3s ease;
+            overflow-y: auto;
+            box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobile-nav.active {
+            left: 0;
+        }
+
+        .mobile-nav-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--gray-medium);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .close-mobile-nav {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .close-mobile-nav::before,
+        .close-mobile-nav::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: var(--text-dark);
+            top: 50%;
+            left: 0;
+        }
+
+        .close-mobile-nav::before {
+            transform: rotate(45deg);
+        }
+
+        .close-mobile-nav::after {
+            transform: rotate(-45deg);
+        }
+
+        .mobile-nav .menu {
+            padding: 20px;
+        }
+
+        .mobile-nav .menu li {
+            border-bottom: 1px solid var(--gray-medium);
+        }
+
+        .mobile-nav .menu li a {
+            display: block;
+            padding: 15px 0;
+            color: var(--text-dark);
+            font-size: 16px;
+        }
+
+        .mobile-nav .menu li a:hover {
+            color: var(--primary-color);
+        }
+
+        .mobile-nav .sub-menu {
+            padding-left: 20px;
+            display: none;
+        }
+
+        .mobile-nav .menu-item-has-children>a::after {
+            content: '+';
+            float: right;
+            font-weight: bold;
+        }
+
+        .mobile-nav .menu-item-has-children.open>a::after {
+            content: '-';
+        }
+
+        .mobile-nav .menu-item-has-children.open .sub-menu {
+            display: block;
+        }
+
+        .nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9998;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        .nav-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* ---------- Mobile Bottom Bar ---------- */
+        .mobile-bottom-bar {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--secondary-color);
+            z-index: 9999;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobile-bottom-bar .bar-content {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .mobile-bottom-bar .bar-item {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            color: var(--white);
+            transition: var(--transition);
+        }
+
+        .mobile-bottom-bar .bar-item:hover {
+            background-color: var(--primary-color);
+        }
+
+        .mobile-bottom-bar .bar-item i {
+            font-size: 22px;
+        }
+
+        /* ---------- Responsive Styles ---------- */
+        @media (max-width: 1024px) {
+            .container {
+                max-width: 960px;
+            }
+
+            .highlights {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            /* Topbar */
+            .topbar {
+                display: none;
+            }
+
+            .topbar-mobile {
+                display: block;
+                background-color: var(--secondary-color);
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            /* Header */
+            .navbar-toggle {
+                display: block;
+            }
+
+            .header-menu {
+                display: none;
+            }
+
+            .site-logo img {
+                height: 60px;
+                margin-left: 15px;
+            }
+
+            /* Contact Hero */
+            .contact-hero {
+                padding: 100px 0 60px;
+            }
+
+            .contact-hero h1 {
+                font-size: 36px;
+            }
+
+            /* Contact Info */
+            .contact-info-card {
+                min-width: 100%;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+
+            /* Contact Form */
+            .contact-form-wrapper {
+                flex-direction: column;
+            }
+
+            .form-row {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            /* Footer */
+            .footer-col {
+                flex: 0 0 50%;
+                margin-bottom: 30px;
+            }
+
+            /* Mobile Bottom Bar */
+            .mobile-bottom-bar {
+                display: block;
+            }
+
+            body {
+                padding-bottom: 60px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .contact-hero h1 {
+                font-size: 30px;
+            }
+
+            .contact-hero p {
+                font-size: 16px;
+            }
+
+            .section-title h2 {
+                font-size: 26px;
+            }
+
+            .contact-form-right {
+                padding: 30px 20px;
+            }
+
+            .footer-col {
+                flex: 0 0 100%;
+            }
+
+            .map-wrapper {
+                height: 350px;
+            }
+        }
+
+        /* ---------- SVG Icons ---------- */
+        .svg-icon {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .svg-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: currentColor;
+        }
+
+        /* Topbar Mobile */
+        .topbar-mobile {
+            background-color: var(--secondary-color);
+            padding: 12px 0;
+            color: var(--white);
+        }
+
+        .topbar-mobile-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .topbar-mobile .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            font-size: 13px;
+            color: var(--white);
+        }
+
+        .topbar-mobile .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .topbar-mobile .contact-info .svg-icon {
+            width: 14px;
+            height: 14px;
+            fill: var(--primary-color);
+        }
+
+        /* Form Success/Error Messages */
+        .form-message {
+            padding: 12px 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .form-message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .form-message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- SVG Icons Definition -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <!-- Phone Icon -->
+        <symbol id="icon-phone" viewBox="0 0 512 512">
+            <path
+                d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z" />
+        </symbol>
+
+        <!-- Envelope Icon -->
+        <symbol id="icon-envelope" viewBox="0 0 512 512">
+            <path
+                d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z" />
+        </symbol>
+
+        <!-- Location Icon -->
+        <symbol id="icon-location" viewBox="0 0 384 512">
+            <path
+                d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z" />
+        </symbol>
+
+        <!-- Clock Icon -->
+        <symbol id="icon-clock" viewBox="0 0 512 512">
+            <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z" />
+        </symbol>
+
+        <!-- Send Icon -->
+        <symbol id="icon-send" viewBox="0 0 512 512">
+            <path
+                d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z" />
+        </symbol>
+
+        <!-- User Icon -->
+        <symbol id="icon-user" viewBox="0 0 448 512">
+            <path
+                d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" />
+        </symbol>
+
+        <!-- Best/Award Icon -->
+        <symbol id="icon-best" viewBox="0 0 576 512">
+            <path
+                d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 0-24 10.7-24 24v40H24C10.7 64 0 74.7 0 88v56c0 66.5 77.9 131.7 171.9 142.4C203.3 338.5 240 360 288 368v72h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h48v32c0 13.3 10.7 24 24 24s24-10.7 24-24v-32h48c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72v-72c48-8 84.7-29.5 116.1-81.6C498.1 275.7 576 210.5 576 144V88c0-13.3-10.7-24-24-24z" />
+        </symbol>
+
+        <!-- Map Pin Icon -->
+        <symbol id="icon-map-pin" viewBox="0 0 384 512">
+            <path
+                d="M192 0C85.961 0 0 85.961 0 192c0 77.413 26.97 99.031 172.268 309.67 9.534 13.772 29.929 13.774 39.465 0C357.03 291.031 384 269.413 384 192 384 85.961 298.039 0 192 0zm0 464C64.576 289.329 48 269.293 48 192c0-79.529 64.471-144 144-144s144 64.471 144 144c0 77.293-16.576 97.329-144 272zM192 128c-35.29 0-64 28.71-64 64s28.71 64 64 64 64-28.71 64-64-28.71-64-64-64z" />
+        </symbol>
+    </svg>
+
+    <!-- Page Wrapper -->
+    <div id="page" class="site">
+
+
+
+        <!-- Header -->
+        <header id="masthead" class="site-header">
+            <!-- Mobile Topbar -->
+            <div class="topbar-mobile">
+                <div class="container">
+                    <div class="topbar-mobile-content">
+                        <div class="contact-info">
+                            <span>
+                                <span class="svg-icon">
+                                    <svg>
+                                        <use href="#icon-phone"></use>
+                                    </svg>
+                                </span>
+                                +93 78 772 7204
+                            </span>
+                            <span>
+                                <span class="svg-icon">
+                                    <svg>
+                                        <use href="#icon-envelope"></use>
+                                    </svg>
+                                </span>
+                                info@farmergroup.com
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-main">
+                <!-- Header Bar -->
+                <div class="header-bar">
+                    <div class="container">
+                        <div class="header-row">
+                            <div class="site-logo">
+                                <a href="index.html" class="logo">
+                                    <!-- Using placeholder image - replace with your logo -->
+                                    <img src="images/logo.png"
+                                        alt="Farmer Group" class="logo-main">
+                                </a>
+                                <h1 class="site-title">Farmer Group</h1>
+                            </div>
+
+                            <div class="highlights">
+                                <div class="widget">
+                                    <div class="pull-left">
+                                        <div>Leading in Quality</div>
+                                        <div>For Best Food</div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <span class="svg-icon" style="width:45px; height:45px; color:#9cc212;">
+                                            <svg>
+                                                <use href="#icon-best"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="widget">
+                                    <div class="pull-left">
+                                        <div>Farmer's Choice</div>
+                                        <div>Quality in Manure</div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <span class="svg-icon" style="width:45px; height:45px; color:#9cc212;">
+                                            <svg>
+                                                <use href="#icon-user"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="navbar-toggle" id="menu-toggle">
+                                <span class="navbar-icon">
+                                    <span class="navbars-line"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Header Menu -->
+                <div class="header-menu">
+                    <div class="container">
+                        <div class="site-menu">
+                            <nav id="site-navigation" class="main-nav">
+                                <ul class="menu">
+                                    <li><a href="index.html">Homepage</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a href="products.html">Products</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="vegetable.html">Vegetable Seeds</a></li>
+                                            <li><a href="fruit.html">Fruit Seeds</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="current-menu-item"><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div id="content" class="site-content">
+
+            <!-- Contact Hero Section -->
+            <section class="contact-hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>Contact Farmer Group</h1>
+                        <p>We're here to help you with all your agricultural needs. Get in touch with our team for
+                            inquiries about our quality fertilizers, seeds, and expert advice.</p>
+                        <div class="breadcrumb">
+                            <a href="index.html">Home</a>
+                            <span>/</span>
+                            <span>Contact</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Info Section -->
+            <section class="contact-info-section">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Get In Touch</h2>
+                        <p>We are committed to providing the best agricultural solutions. Reach out to us through any of
+                            the following channels.</p>
+                    </div>
+
+                    <div class="contact-info-grid">
+                        <!-- Phone -->
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <span class="svg-icon">
+                                    <svg>
+                                        <use href="#icon-phone"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3>Phone</h3>
+                            <p>Call us for immediate assistance</p>
+                            <p><a href="tel:+93787727204">+93 78 772 7204</a></p>
+                            <p>Available 9:00 AM - 6:00 PM (Weekdays)</p>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <span class="svg-icon">
+                                    <svg>
+                                        <use href="#icon-envelope"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3>Email</h3>
+                            <p>Send us an email anytime</p>
+                            <p><a href="mailto:info@farmergroup.com">info@farmergroup.com</a></p>
+                            <p>We respond within 24 hours</p>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="contact-info-card">
+                            <div class="contact-info-icon">
+                                <span class="svg-icon">
+                                    <svg>
+                                        <use href="#icon-location"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3>Location</h3>
+                            <p>Find our office</p>
+                            <p>Kabul, Afghanistan</p>
+                            <p>Agriculture District</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Form Section -->
+            <section class="contact-form-section">
+                <div class="container">
+                    <div class="contact-form-wrapper">
+                        <!-- Left Content -->
+                        <div class="contact-form-left">
+                            <h3>Send Us a Message</h3>
+                            <p>Have questions about our products or services? Fill out the form below and our team will
+                                get back to you as soon as possible. We're here to help you achieve the best results for
+                                your farming needs.</p>
+
+                            <div class="contact-details-list">
+                                <li>
+                                    <div class="icon">
+                                        <span class="svg-icon">
+                                            <svg>
+                                                <use href="#icon-phone"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="content">
+                                        <h4>Phone Number</h4>
+                                        <p>+93 78 772 7204</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span class="svg-icon">
+                                            <svg>
+                                                <use href="#icon-envelope"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="content">
+                                        <h4>Email Address</h4>
+                                        <p>info@farmergroup.com</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span class="svg-icon">
+                                            <svg>
+                                                <use href="#icon-clock"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="content">
+                                        <h4>Working Hours</h4>
+                                        <p>Weekdays: 9:00 AM - 6:00 PM</p>
+                                        <p>Saturday: 9:00 AM - 3:00 PM</p>
+                                        <p>Sunday: Closed</p>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+
+                        <!-- Right Form -->
+                        <div class="contact-form-right">
+                            <div class="form-message success" id="form-success">
+                                Thank you for your message! We'll get back to you soon.
+                            </div>
+                            <div class="form-message error" id="form-error">
+                                There was an error sending your message. Please try again.
+                            </div>
+
+                            <form class="contact-form" id="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name" class="form-label">Full Name *</label>
+                                        <input type="text" id="name" name="name" class="form-input" required
+                                            placeholder="Your Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">Email Address *</label>
+                                        <input type="email" id="email" name="email" class="form-input" required
+                                            placeholder="your@email.com">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input"
+                                        placeholder="+93 78 772 7204">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Subject *</label>
+                                    <input type="text" id="subject" name="subject" class="form-input" required
+                                        placeholder="How can we help you?">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Message *</label>
+                                    <textarea id="message" name="message" class="form-textarea" required
+                                        placeholder="Tell us about your inquiry..."></textarea>
+                                </div>
+
+                                <button type="submit" class="submit-btn">
+                                    <span class="svg-icon">
+                                        <svg>
+                                            <use href="#icon-send"></use>
+                                        </svg>
+                                    </span>
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Map Section -->
+            <section class="map-section">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Find Us</h2>
+                        <p>Visit our office or contact us for directions.</p>
+                    </div>
+
+                    <div class="map-wrapper">
+                        <div class="map-container">
+                            <!-- In a real implementation, you would embed a Google Map here -->
+                            <div class="map-placeholder">
+                                <span class="svg-icon">
+                                    <svg>
+                                        <use href="#icon-map-pin"></use>
+                                    </svg>
+                                </span>
+                                <h3>Our Location</h3>
+                                <p>Kabul, Afghanistan - Agriculture District</p>
+                                <a href="https://goo.gl/maps/Cq4EWJgB1cn36iQV9" target="_blank" class="map-link">Open in
+                                    Google Maps</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer Widgets -->
+        <div id="footer-widgets" class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Column 1 - Logo -->
+                    <div class="footer-col">
+                        <div class="logo">
+                            <h3 style="color: #2d5016; font-size: 24px; margin: 0 0 10px 0;">Farmer Group</h3>
+                            <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">Providing quality agricultural products and fertilizers to farmers for better yield and sustainable farming.</p>
+                        </div>
+                    </div>
+
+                    <!-- Footer Column 2 - Menu -->
+                    <div class="footer-col footer-menu">
+                        <h4 class="widget-title">Menu</h4>
+                        <ul>
+                            <li><a href="index.html">Homepage</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Footer Column 3 - Working Hours -->
+                    <div class="footer-col working-hours">
+                        <h4 class="widget-title">Working Hours</h4>
+                        <div class="working">
+                            <div><span>Weekdays:</span></div>
+                            <div>09:00 - 18:00</div>
+                        </div>
+                        <div class="working">
+                            <div><span>Weekend:</span></div>
+                            <div>Saturday: 09:00 - 15:00<br>Sunday: Closed</div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Column 4 - Newsletter -->
+                    <div class="footer-col newsletter">
+                        <h4 class="widget-title">Subscribe</h4>
+                        <p>You can subscribe to new products and campaigns.</p>
+                        <form class="newsletter-form" id="newsletter-form">
+                            <input type="email" name="email" placeholder="Your Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Copyright -->
+        <footer id="colophon" class="site-footer">
+            <div class="container footer-info">
+                <p>Build By <a href="https://www.kaleemify.com">Kaleemify</a> | Copyright © 2026 All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-header">
+            <img src="https://via.placeholder.com/150x50/102e19/FFFFFF?text=LOGO" alt="Farmer Group">
+            <div class="close-mobile-nav" id="close-mobile-nav"></div>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li class="menu-item-has-children">
+                <a href="products.html">Products</a>
+                <ul class="sub-menu">
+                    <li><a href="fertilizer.html">Fertilizer</a></li>
+                    <li><a href="vegetable.html">Vegetable Seeds</a></li>
+                    <li><a href="fruit.html">Fruit Seeds</a></li>
+                    <li><a href="pesticide.html">Pesticides</a></li>
+                </ul>
+            </li>
+            <li class="current-menu-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- Mobile Bottom Bar -->
+    <div class="mobile-bottom-bar">
+        <div class="bar-content">
+            <a href="https://goo.gl/maps/Cq4EWJgB1cn36iQV9" class="bar-item" title="Location">
+                <i class="fa fa-map-marker"></i>
+            </a>
+            <a href="mailto:info@farmergroupaf.com" class="bar-item" title="Email">
+                <i class="fa fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/93787727204" class="bar-item" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile Navigation
+            const mobileNavInit = () => {
+                const menuToggle = document.getElementById('menu-toggle');
+                const mobileNav = document.getElementById('mobile-nav');
+                const closeNav = document.getElementById('close-mobile-nav');
+                const navOverlay = document.getElementById('nav-overlay');
+
+                if (!menuToggle || !mobileNav) return;
+
+                // Open mobile nav
+                menuToggle.addEventListener('click', () => {
+                    mobileNav.classList.add('active');
+                    navOverlay.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+
+                // Close mobile nav
+                const closeMobileNav = () => {
+                    mobileNav.classList.remove('active');
+                    navOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                };
+
+                if (closeNav) {
+                    closeNav.addEventListener('click', closeMobileNav);
+                }
+
+                if (navOverlay) {
+                    navOverlay.addEventListener('click', closeMobileNav);
+                }
+
+                // Handle submenu toggle
+                const menuItemsWithChildren = mobileNav.querySelectorAll('.menu-item-has-children');
+
+                menuItemsWithChildren.forEach(item => {
+                    const link = item.querySelector('a');
+
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        item.classList.toggle('open');
+                    });
+                });
+            };
+
+            // Contact Form Submission
+            const contactFormInit = () => {
+                const form = document.getElementById('contact-form');
+                const successMsg = document.getElementById('form-success');
+                const errorMsg = document.getElementById('form-error');
+
+                if (!form) return;
+
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+
+                    // Hide previous messages
+                    if (successMsg) successMsg.style.display = 'none';
+                    if (errorMsg) errorMsg.style.display = 'none';
+
+                    // Simple validation
+                    const name = form.querySelector('#name').value;
+                    const email = form.querySelector('#email').value;
+                    const phone = form.querySelector('#phone').value;
+                    const subject = form.querySelector('#subject').value;
+                    const message = form.querySelector('#message').value;
+
+                    if (!name || !email || !subject || !message) {
+                        if (errorMsg) {
+                            errorMsg.textContent = 'Please fill in all required fields.';
+                            errorMsg.style.display = 'block';
+                        }
+                        return;
+                    }
+
+                    // Create WhatsApp message with form data
+                    const whatsappMessage = `*New Contact Form Submission*\n\n` +
+                        `*Name:* ${name}\n` +
+                        `*Email:* ${email}\n` +
+                        `*Phone:* ${phone || 'Not provided'}\n` +
+                        `*Subject:* ${subject}\n` +
+                        `*Message:* ${message}`;
+
+                    // Encode message for URL
+                    const encodedMessage = encodeURIComponent(whatsappMessage);
+                    
+                    // WhatsApp number (with country code, without + sign)
+                    const whatsappNumber = '93787727204';
+                    
+                    // Create WhatsApp link
+                    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+
+                    // Show success message
+                    if (successMsg) {
+                        successMsg.textContent = 'Thank you! Opening WhatsApp to send your message...';
+                        successMsg.style.display = 'block';
+
+                        // Scroll to success message
+                        successMsg.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'center'
+                        });
+                    }
+
+                    // Open WhatsApp after a brief delay
+                    setTimeout(() => {
+                        window.open(whatsappLink, '_blank');
+                        form.reset();
+                        console.log('Form submitted via WhatsApp:', { name, email, phone, subject, message });
+                    }, 500);
+                });
+            };
+
+            // Newsletter Form
+            const newsletterInit = () => {
+                const form = document.getElementById('newsletter-form');
+
+                if (!form) return;
+
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+
+                    const email = form.querySelector('input[type="email"]').value;
+
+                    if (email) {
+                        // Show success message
+                        alert('Thank you for subscribing to Farmer Group updates!');
+                        form.reset();
+                    }
+                });
+            };
+
+            // Dropdown Menu (Desktop)
+            const dropdownInit = () => {
+                const menuItems = document.querySelectorAll('.main-nav .menu-item-has-children');
+
+                menuItems.forEach(item => {
+                    item.addEventListener('mouseenter', () => {
+                        const submenu = item.querySelector('.sub-menu');
+                        if (submenu) {
+                            submenu.style.opacity = '1';
+                            submenu.style.visibility = 'visible';
+                            submenu.style.transform = 'translateY(0)';
+                        }
+                    });
+
+                    item.addEventListener('mouseleave', () => {
+                        const submenu = item.querySelector('.sub-menu');
+                        if (submenu) {
+                            submenu.style.opacity = '0';
+                            submenu.style.visibility = 'hidden';
+                            submenu.style.transform = 'translateY(10px)';
+                        }
+                    });
+                });
+            };
+
+            // Initialize everything
+            mobileNavInit();
+            contactFormInit();
+            newsletterInit();
+            dropdownInit();
+
+            console.log('Farmer Group contact page initialized.');
+        });
+    </script>
+</body>
+
+</html>

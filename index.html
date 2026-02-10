@@ -1,0 +1,2295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Farmer Group - Leading in Quality for Best Food. Quality organic and chemical fertilizers.">
+    <title>Farmer Group - Quality Fertilizers</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ============================================
+   FARMER GROUP - Clean Standalone CSS
+   Rebuilt from WordPress Theme
+   ============================================ */
+
+        /* ---------- CSS Variables ---------- */
+        :root {
+            --primary-color: #9cc212;
+            --primary-dark: #87af26;
+            --secondary-color: #102e19;
+            --text-dark: #2e2e2e;
+            --text-light: #666666;
+            --white: #ffffff;
+            --black: #000000;
+            --gray-light: #f5f5f5;
+            --gray-medium: #ebebeb;
+            --font-primary: 'Poppins', Arial, sans-serif;
+            --font-secondary: 'Rubik', Arial, sans-serif;
+            --transition: all 0.3s ease;
+        }
+
+        /* ---------- Reset & Base Styles ---------- */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-secondary);
+            font-size: 16px;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+            overflow-x: hidden;
+            max-width: 1500px;
+            margin: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-primary);
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .container-full {
+            max-width: 100%;
+            padding: 0;
+        }
+
+        /* ---------- Utility Classes ---------- */
+        .text-center {
+            text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .text-white {
+            color: var(--white);
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+
+        .col {
+            padding: 0 15px;
+        }
+
+        /* Grid System */
+        .col-12 {
+            width: 100%;
+        }
+
+        .col-lg-3 {
+            width: 25%;
+        }
+
+        .col-lg-4 {
+            width: 33.333%;
+        }
+
+        .col-lg-5 {
+            width: 41.666%;
+        }
+
+        .col-lg-7 {
+            width: 58.333%;
+        }
+
+        .col-lg-9 {
+            width: 75%;
+        }
+
+        /* ---------- Top Bar ---------- */
+        .topbar {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        .topbar-widgets {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .topbar .row {
+            align-items: center;
+        }
+
+        .sidebar-left {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .sidebar-left .widget {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sidebar-left .svg-icon {
+            width: 16px;
+            height: 16px;
+            fill: var(--primary-color);
+        }
+
+        .sidebar-right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+
+        .sidebar-right ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        .sidebar-right ul li a {
+            color: var(--white);
+        }
+
+        .sidebar-right ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Social Icons */
+        .socials {
+            display: flex;
+            gap: 15px;
+        }
+
+        .socials li a {
+            color: var(--white);
+            font-size: 14px;
+        }
+
+        .socials li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Language Switcher */
+        .language-switcher {
+            display: flex;
+            gap: 10px;
+        }
+
+        .language-switcher img {
+            width: 20px;
+            height: 14px;
+            border-radius: 2px;
+        }
+
+        /* ---------- Header ---------- */
+        .site-header {
+            background-color: var(--white);
+            position: relative;
+            z-index: 1000;
+        }
+
+        .header-bar {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--gray-medium);
+        }
+
+        .header-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .site-logo {
+            flex: 0 0 auto;
+        }
+
+        .site-logo img {
+            height: 70px;
+        }
+
+        .site-title,
+        .site-description {
+            display: none;
+        }
+
+        /* Header Highlights */
+        .highlights {
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+        }
+
+        .highlights .widget {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .highlights .widget .pull-left {
+            text-align: right;
+        }
+
+        .highlights .widget .pull-left div:first-child {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .highlights .widget .pull-left div:last-child {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        .highlights .widget .pull-right .svg-icon {
+            width: 45px;
+            height: 45px;
+            fill: var(--primary-color);
+        }
+
+        /* ---------- Navigation ---------- */
+        .header-menu {
+            background-color: var(--secondary-color);
+        }
+
+        .site-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-nav .menu {
+            display: flex;
+            gap: 0;
+        }
+
+        .main-nav .menu>li {
+            position: relative;
+        }
+
+        .main-nav .menu>li>a {
+            display: block;
+            padding: 18px 25px;
+            color: var(--white);
+            font-weight: 500;
+            font-size: 15px;
+            transition: var(--transition);
+        }
+
+        .main-nav .menu>li>a:hover,
+        .main-nav .menu>li.current-menu-item>a {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Dropdown Menu */
+        .main-nav .menu>li .sub-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: var(--white);
+            min-width: 220px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: var(--transition);
+            z-index: 1000;
+        }
+
+        .main-nav .menu>li:hover .sub-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .main-nav .sub-menu li a {
+            display: block;
+            padding: 12px 20px;
+            color: var(--text-dark);
+            border-bottom: 1px solid var(--gray-medium);
+            font-size: 14px;
+        }
+
+        .main-nav .sub-menu li a:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Mobile Menu Toggle */
+        .navbar-toggle {
+            display: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .navbar-icon {
+            display: block;
+            width: 30px;
+            height: 20px;
+            position: relative;
+        }
+
+        .navbars-line,
+        .navbars-line::before,
+        .navbars-line::after {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: var(--secondary-color);
+            position: absolute;
+            transition: var(--transition);
+        }
+
+        .navbars-line {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .navbars-line::before {
+            content: '';
+            top: -8px;
+        }
+
+        .navbars-line::after {
+            content: '';
+            bottom: -8px;
+        }
+
+        /* ---------- Hero Slider ---------- */
+        .hero-slider {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slider-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .slide-content {
+            position: absolute;
+            top: 50%;
+            left: 100px;
+            transform: translateY(-50%);
+            max-width: 600px;
+            z-index: 10;
+        }
+
+        .slide-title {
+            font-size: 60px;
+            line-height: 75px;
+            color: var(--white);
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: var(--font-primary);
+        }
+
+        .slide-description {
+            font-size: 18px;
+            line-height: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: var(--white);
+            margin-bottom: 30px;
+        }
+
+        .slide-btn {
+            display: inline-block;
+            padding: 12px 35px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 30px;
+            transition: var(--transition);
+        }
+
+        .slide-btn:hover {
+            background-color: var(--primary-dark);
+            color: var(--white);
+        }
+
+        /* Slider Navigation */
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 70px;
+            height: 70px;
+            border: 2px solid var(--white);
+            background: transparent;
+            cursor: pointer;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .slider-nav:hover {
+            border-color: var(--primary-color);
+        }
+
+        .slider-nav svg {
+            width: 30px;
+            height: 30px;
+            fill: var(--white);
+            transition: var(--transition);
+        }
+
+        .slider-nav:hover svg {
+            fill: var(--primary-color);
+        }
+
+        .slider-prev {
+            left: 0;
+            border-left: none;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+
+        .slider-next {
+            right: 0;
+            border-right: none;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+        }
+
+        /* ---------- Contact & Services Section ---------- */
+        .services-intro {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .contact-box {
+            flex: 0 0 33.333%;
+            padding: 30px 15px 30px 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-box .svg-icon {
+            width: 65px;
+            height: 65px;
+            fill: var(--primary-color);
+        }
+
+        .contact-box .title {
+            font-size: 24px;
+            color: var(--text-dark);
+            margin-bottom: 5px;
+        }
+
+        .contact-box .phone {
+            font-size: 18px;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        .service-card {
+            flex: 0 0 33.333%;
+            min-height: 280px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            padding: 40px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .service-card-content {
+            position: relative;
+            z-index: 1;
+            color: var(--white);
+        }
+
+        .service-card .icon-wrapper {
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .service-card .icon-wrapper .svg-icon {
+            width: 40px;
+            height: 40px;
+            fill: var(--white);
+        }
+
+        .service-card .title {
+            font-size: 22px;
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .service-card .description {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--white);
+        }
+
+        .service-card-1 {
+            border-radius: 0 0 0 5px;
+        }
+
+        .service-card-2 {
+            border-radius: 0 0 5px 0;
+        }
+
+        /* ---------- What We Do Section ---------- */
+        .what-we-do {
+            background: linear-gradient(135deg, #f8fdf0 0%, #e8f5d6 100%);
+            background-size: cover;
+            background-position: center;
+            padding: 90px 0 75px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 30px;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            font-size: 16px;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+
+        .feature-box {
+            flex: 0 0 25%;
+            padding: 0 15px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .feature-box .icon-wrapper {
+            margin-bottom: 20px;
+        }
+
+        .feature-box .svg-icon {
+            width: 60px;
+            height: 60px;
+            fill: var(--primary-color);
+            margin: 0 auto;
+        }
+
+        .feature-box .title {
+            font-size: 18px;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        .feature-box .description {
+            font-size: 14px;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        /* ---------- Testimonials Section ---------- */
+        .testimonials {
+            background-image: url('../images/testimonial-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 90px 0 60px;
+        }
+
+        .testimonials .section-header {
+            margin-bottom: 30px;
+        }
+
+        .testimonials .section-header h2 {
+            font-size: 30px;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .testimonials .section-header p {
+            color: var(--text-light);
+            font-size: 16px;
+        }
+
+        .testimonial-slider {
+            display: flex;
+            gap: 30px;
+            overflow: hidden;
+        }
+
+        .testimonial-item {
+            flex: 0 0 calc(50% - 15px);
+            background: var(--white);
+            border-radius: 5px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .testimonial-content {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .quote-icon {
+            width: 40px;
+            height: 40px;
+            fill: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            color: var(--text-light);
+            line-height: 1.8;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .author-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .author-info h4 {
+            font-size: 18px;
+            color: var(--text-dark);
+            margin-bottom: 5px;
+        }
+
+        .author-info .location {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-bottom: 8px;
+        }
+
+        .star-rating {
+            color: #ffc107;
+            font-size: 14px;
+        }
+
+        .star-rating i {
+            margin-right: 2px;
+        }
+
+        /* Testimonial Dots */
+        .testimonial-dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--gray-medium);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .dot.active {
+            background-color: var(--primary-color);
+        }
+
+        /* ---------- Footer Widgets ---------- */
+        .footer-widgets {
+            background-color: var(--secondary-color);
+            padding: 60px 0;
+            color: var(--white);
+        }
+
+        .footer-widgets .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer-col {
+            flex: 0 0 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col .widget-title {
+            font-size: 18px;
+            color: var(--white);
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .footer-col .logo {
+            margin-bottom: 20px;
+        }
+
+        .footer-col .logo img {
+            max-width: 200px;
+        }
+
+        /* Footer Menu */
+        .footer-menu ul {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-menu ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 15px;
+        }
+
+        .footer-menu ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Working Hours */
+        .working-hours .working {
+            margin-bottom: 20px;
+        }
+
+        .working-hours .working span {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .working-hours .working div {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* Newsletter */
+        .newsletter p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .newsletter-form input[type="email"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+        }
+
+        .newsletter-form input[type="email"]::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .newsletter-form button {
+            padding: 12px 25px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .newsletter-form button:hover {
+            background-color: var(--primary-dark);
+        }
+
+        /* ---------- Footer Copyright ---------- */
+        .site-footer {
+            background-color: #0a1f10;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .site-footer p {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .site-footer a {
+            color: var(--primary-color);
+        }
+
+        /* ---------- Mobile Navigation ---------- */
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            left: -300px;
+            width: 300px;
+            height: 100%;
+            background-color: var(--white);
+            z-index: 9999;
+            transition: left 0.3s ease;
+            overflow-y: auto;
+            box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobile-nav.active {
+            left: 0;
+        }
+
+        .mobile-nav-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--gray-medium);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .close-mobile-nav {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .close-mobile-nav::before,
+        .close-mobile-nav::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: var(--text-dark);
+            top: 50%;
+            left: 0;
+        }
+
+        .close-mobile-nav::before {
+            transform: rotate(45deg);
+        }
+
+        .close-mobile-nav::after {
+            transform: rotate(-45deg);
+        }
+
+        .mobile-nav .menu {
+            padding: 20px;
+        }
+
+        .mobile-nav .menu li {
+            border-bottom: 1px solid var(--gray-medium);
+        }
+
+        .mobile-nav .menu li a {
+            display: block;
+            padding: 15px 0;
+            color: var(--text-dark);
+            font-size: 16px;
+        }
+
+        .mobile-nav .menu li a:hover {
+            color: var(--primary-color);
+        }
+
+        .mobile-nav .sub-menu {
+            padding-left: 20px;
+            display: none;
+        }
+
+        .mobile-nav .menu-item-has-children>a::after {
+            content: '+';
+            float: right;
+            font-weight: bold;
+        }
+
+        .mobile-nav .menu-item-has-children.open>a::after {
+            content: '-';
+        }
+
+        .mobile-nav .menu-item-has-children.open .sub-menu {
+            display: block;
+        }
+
+        .nav-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9998;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        .nav-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* ---------- Mobile Bottom Bar (Touchy Style) ---------- */
+        .mobile-bottom-bar {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--secondary-color);
+            z-index: 9999;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .mobile-bottom-bar .bar-content {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .mobile-bottom-bar .bar-item {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            color: var(--white);
+            transition: var(--transition);
+        }
+
+        .mobile-bottom-bar .bar-item:hover {
+            background-color: var(--primary-color);
+        }
+
+        .mobile-bottom-bar .bar-item i {
+            font-size: 22px;
+        }
+
+        /* ---------- Responsive Styles ---------- */
+        @media (max-width: 1024px) {
+            .container {
+                max-width: 960px;
+            }
+
+            .col-lg-3,
+            .col-lg-4,
+            .col-lg-6 {
+                width: 50%;
+            }
+
+            .highlights {
+                display: none;
+            }
+
+            .slide-title {
+                font-size: 48px;
+                line-height: 60px;
+                margin-bottom: 8px;
+            }
+
+            .slide-content {
+                left: 50px;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            /* Topbar */
+            .topbar {
+                display: none;
+            }
+
+            .topbar-mobile {
+                display: block;
+                background-color: var(--secondary-color);
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            .topbar-mobile .language-switcher {
+                justify-content: center;
+            }
+
+            /* Header */
+            .navbar-toggle {
+                display: block;
+            }
+
+            .header-menu {
+                display: none;
+            }
+
+            .site-logo img {
+                height: 40px;
+            }
+
+            /* Slider */
+            .slider-container {
+                height: 300px;
+            }
+
+            .slide-content {
+                left: 30px;
+                right: 30px;
+                max-width: none;
+            }
+
+            .slide-title {
+                font-size: 36px;
+                line-height: 50px;
+            }
+
+            .slide-description {
+                font-size: 14px;
+                line-height: 24px;
+            }
+
+            .slider-nav {
+                display: none;
+            }
+
+            /* Services */
+            .services-intro {
+                flex-direction: column;
+            }
+
+            .contact-box,
+            .service-card {
+                flex: 0 0 100%;
+            }
+
+            .service-card {
+                border-radius: 0 !important;
+            }
+
+            /* Features */
+            .feature-box {
+                flex: 0 0 50%;
+            }
+
+            /* Testimonials */
+            .testimonial-slider {
+                flex-direction: column;
+            }
+
+            .testimonial-item {
+                flex: 0 0 100%;
+            }
+
+            /* Footer */
+            .footer-col {
+                flex: 0 0 50%;
+                margin-bottom: 30px;
+            }
+
+            /* Mobile Bottom Bar */
+            .mobile-bottom-bar {
+                display: block;
+            }
+
+            body {
+                padding-bottom: 60px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .slide-title {
+                font-size: 30px;
+                line-height: 40px;
+            }
+
+            .slide-content {
+                left: 20px;
+                right: 20px;
+            }
+
+            .what-we-do {
+                padding: 60px 0 40px;
+            }
+
+            .testimonials {
+                padding: 60px 0 40px;
+            }
+
+            .feature-box {
+                flex: 0 0 100%;
+            }
+
+            .footer-col {
+                flex: 0 0 100%;
+            }
+
+            .section-title h2 {
+                font-size: 24px;
+            }
+        }
+
+        /* ---------- SVG Icons ---------- */
+        .svg-icon {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .svg-icon svg {
+            width: 100%;
+            height: 100%;
+            fill: currentColor;
+        }
+
+        /* Hidden utility */
+        .hidden {
+            display: none !important;
+        }
+
+        /* Desktop only */
+        @media (min-width: 769px) {
+            .topbar-mobile {
+                display: none;
+            }
+        }
+
+        /* Topbar Mobile */
+        .topbar-mobile {
+            background-color: var(--secondary-color);
+            padding: 12px 0;
+            color: var(--white);
+        }
+
+        .topbar-mobile-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .topbar-mobile .language-switcher {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .topbar-mobile .language-switcher img {
+            width: 24px;
+            height: auto;
+            border-radius: 2px;
+        }
+
+        .topbar-mobile .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            font-size: 13px;
+            color: var(--white);
+        }
+
+        .topbar-mobile .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .topbar-mobile .contact-info .svg-icon {
+            width: 14px;
+            height: 14px;
+            fill: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- SVG Icons Definition -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <!-- Phone Icon -->
+        <symbol id="icon-phone" viewBox="0 0 512 512">
+            <path
+                d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z" />
+        </symbol>
+
+        <!-- Envelope Icon -->
+        <symbol id="icon-envelope" viewBox="0 0 512 512">
+            <path
+                d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z" />
+        </symbol>
+
+        <!-- Smartphone Icon -->
+        <symbol id="icon-smartphone" viewBox="0 0 512 512">
+            <path
+                d="M371.093 0H149.227c-18.773 0-34.133 15.36-34.133 34.133v443.733c0 18.773 15.36 34.133 34.133 34.133h221.867c18.773 0 34.133-15.36 34.133-34.133V34.133C405.227 15.36 389.867 0 371.093 0zm17.067 477.867c0 9.387-7.68 17.067-17.067 17.067H149.227c-9.387 0-17.067-7.68-17.067-17.067V34.133c0-9.387 7.68-17.067 17.067-17.067h221.867c9.387 0 17.067 7.68 17.067 17.067v443.734zM260.16 435.2c-18.773 0-34.133 15.36-34.133 34.133 0 18.773 15.36 34.133 34.133 34.133s34.133-15.36 34.133-34.133c0-18.773-15.36-34.133-34.133-34.133z" />
+        </symbol>
+
+        <!-- User Icon -->
+        <symbol id="icon-user" viewBox="0 0 448 512">
+            <path
+                d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" />
+        </symbol>
+
+        <!-- Best/Award Icon -->
+        <symbol id="icon-best" viewBox="0 0 576 512">
+            <path
+                d="M552 64H448V24c0-13.3-10.7-24-24-24H152c-13.3 0-24 10.7-24 24v40H24C10.7 64 0 74.7 0 88v56c0 66.5 77.9 131.7 171.9 142.4C203.3 338.5 240 360 288 368v72h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h48v32c0 13.3 10.7 24 24 24s24-10.7 24-24v-32h48c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72v-72c48-8 84.7-29.5 116.1-81.6C498.1 275.7 576 210.5 576 144V88c0-13.3-10.7-24-24-24zM64 144v-32h64v96c-35.3-12.1-64-36.7-64-64zm448 0c0 27.3-28.7 51.9-64 64v-96h64v32z" />
+        </symbol>
+
+        <!-- Sprout Icon -->
+        <symbol id="icon-sprout" viewBox="0 0 512 512">
+            <path
+                d="M64 96H0c0 123.7 100.3 224 224 224v144c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V320C288 196.3 187.7 96 64 96zm384-64c-84.2 0-157.4 46.5-195.7 115.2 27.7 30.2 48.2 66.9 59 107.6C424 243.1 512 147.9 512 32h-64z" />
+        </symbol>
+
+        <!-- Insurance/Shield Icon -->
+        <symbol id="icon-insurance" viewBox="0 0 512 512">
+            <path
+                d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256 446.5l.5.2-.5-.2zm0 0l.5.2-.5-.2zm0 0c-89.2-38.2-174-128.8-190.2-269.6L256 110l190.2 66.9c-16.2 140.8-101 231.4-190.2 269.6zm158.2-282l-158.2 55.4-158.2-55.4L256 74.8l158.2 89.7z" />
+        </symbol>
+
+        <!-- Consulting Icon -->
+        <symbol id="icon-consulting" viewBox="0 0 640 512">
+            <path
+                d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z" />
+        </symbol>
+
+        <!-- Park/Nature Icon -->
+        <symbol id="icon-park" viewBox="0 0 576 512">
+            <path
+                d="M546.2 9.7c-5.6-12.5-21.6-13-28.3-1.2C486.9 62.4 431.4 96 368 96h-80C182 96 96 182 96 288c0 7 .8 13.7 1.5 20.5C161.3 262.8 253.4 224 384 224c8.8 0 16 7.2 16 16s-7.2 16-16 16C132.6 256 26 410.1 2.4 468c-6.6 16.3 1.2 34.9 17.5 41.6 16.4 6.8 35-1.1 41.8-17.3 1.5-3.6 20.9-47.9 71.9-90.6 32.4 43.9 94 85.8 174.9 77.2C465.5 467.5 576 326.7 576 154.3c0-50.2-10.8-102.2-29.8-144.6z" />
+        </symbol>
+
+        <!-- Blueprint Icon -->
+        <symbol id="icon-blueprint" viewBox="0 0 512 512">
+            <path
+                d="M0 448V64c0-17.67 14.33-32 32-32h384c17.67 0 32 14.33 32 32v384c0 17.67-14.33 32-32 32H32c-17.67 0-32-14.33-32-32zm96-160v-64H64v64h32zm0 96v-64H64v64h32zm320-256H128v64h288V128zm0 96H128v64h288v-64zm0 96H128v64h288v-64z" />
+        </symbol>
+
+        <!-- Gardening Icon -->
+        <symbol id="icon-gardening" viewBox="0 0 512 512">
+            <path
+                d="M512 32c0-3.5-2.8-6.3-6.3-6.4C444.3 23.8 343.4 28 258.2 68.8c-75.3 36.1-126 101.2-134.5 172H0v32h112.5c-.3 8.5-.5 17-.5 25.5 0 79.5 64.5 144 144 144s144-64.5 144-144c0-8.5-.2-17-.5-25.5H512V256H397.7c-8.5-70.8-59.2-135.9-134.5-172C348.4 44 449.3 39.8 510.7 37.5c3.5-.2 6.3-2.9 6.3-6.3V32h-5z" />
+        </symbol>
+
+        <!-- Quotation Icon -->
+        <symbol id="icon-quotation" viewBox="0 0 512 512">
+            <path
+                d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z" />
+        </symbol>
+
+        <!-- Arrow Left -->
+        <symbol id="icon-arrow-left" viewBox="0 0 448 512">
+            <path
+                d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z" />
+        </symbol>
+
+        <!-- Arrow Right -->
+        <symbol id="icon-arrow-right" viewBox="0 0 448 512">
+            <path
+                d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z" />
+        </symbol>
+    </svg>
+
+    <!-- Page Wrapper -->
+    <div id="page" class="site">
+
+        <!-- Top Bar (Desktop) -->
+        <div class="topbar" id="topbar">
+            <div class="topbar-widgets">
+                <div class="container">
+                    <div class="row">
+                        <div class="sidebar-left col col-lg-6">
+                            <div class="widget">
+                                <span class="svg-icon" style="width:16px; height:16px;">
+                                    <svg>
+                                        <use href="#icon-phone"></use>
+                                    </svg>
+                                </span>
+                                <span>+93 78 772 7204</span>
+                            </div>
+                            <div class="widget">
+                                <span class="svg-icon" style="width:16px; height:16px;">
+                                    <svg>
+                                        <use href="#icon-envelope"></use>
+                                    </svg>
+                                </span>
+                                <span>info@farmergroup.com</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-right col col-lg-6">
+                            <ul class="socials">
+                                <li><a href="https://www.facebook.com/farmergroupaf" title="Facebook"><i
+                                            class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/farmergroupaf" title="Instagram"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header id="masthead" class="site-header">
+            <!-- Mobile Topbar -->
+            <div class="topbar-mobile">
+                <div class="container">
+                    <div class="topbar-mobile-content">
+                        <div class="contact-info">
+                            <span>
+                                <span class="svg-icon">
+                                    <svg>
+                                        <use href="#icon-phone"></use>
+                                    </svg>
+                                </span>
+                                +93 78 772 7204
+                            </span>
+                            <span>
+                                <span class="svg-icon">
+                                    <svg>
+                                        <use href="#icon-envelope"></use>
+                                    </svg>
+                                </span>
+                                info@farmergroup.com
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-main">
+                <!-- Header Bar -->
+                <div class="header-bar">
+                    <div class="container">
+                        <div class="header-row">
+                            <div class="site-logo">
+                                <a href="index.html" class="logo">
+                                    <img src="images/logo.png" alt="Farmer Group" class="logo-main">
+                                </a>
+                                <h1 class="site-title">Farmer Group</h1>
+                            </div>
+
+                            <div class="highlights">
+                                <div class="widget">
+                                    <div class="pull-left">
+                                        <div>Leading in Quality</div>
+                                        <div>For Best Food</div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <span class="svg-icon" style="width:45px; height:45px; color:#9cc212;">
+                                            <svg>
+                                                <use href="#icon-best"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="widget">
+                                    <div class="pull-left">
+                                        <div>Farmer's Choice</div>
+                                        <div>Quality in Manure</div>
+                                    </div>
+                                    <div class="pull-right">
+                                        <span class="svg-icon" style="width:45px; height:45px; color:#9cc212;">
+                                            <svg>
+                                                <use href="#icon-user"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="navbar-toggle" id="menu-toggle">
+                                <span class="navbar-icon">
+                                    <span class="navbars-line"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Header Menu -->
+                <div class="header-menu">
+                    <div class="container">
+                        <div class="site-menu">
+                            <nav id="site-navigation" class="main-nav">
+                                <ul class="menu">
+                                    <li class="current-menu-item"><a href="index.html">Homepage</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li class="menu-item-has-children">
+                                        <a href="products.html">Products</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="vegetable.html">Vegetable Seeds</a></li>
+                                            <li><a href="fruit.html">Fruit Seeds</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div id="content" class="site-content">
+
+            <!-- Hero Slider -->
+            <section class="hero-slider">
+                <div class="slider-container">
+                    <!-- Slide 1 -->
+                    <div class="slide active" style="background-image: url('images/slider-1.jpg');">
+                        <div class="slide-content">
+                            <h1 class="slide-title">Quality First!</h1>
+                            <p class="slide-description">Farmer Group continues its service with the understanding of
+                                guaranteeing the quality of its products and its constantly developing technology.
+                            </p>
+                            <a href="products.html" class="slide-btn">OUR PRODUCTS</a>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide" style="background-image: url('images/slider-2.jpg');">
+                        <div class="slide-content">
+                            <h1 class="slide-title">Natural Crop!</h1>
+                            <p class="slide-description">We produce natural products that do not harm the nature of
+                                human and plant, we work without stopping with respect to human, soil and nature.</p>
+                            <a href="about.html" class="slide-btn">ABOUT US</a>
+                        </div>
+                    </div>
+
+                    <!-- Navigation -->
+                    <button class="slider-nav slider-prev" aria-label="Previous slide">
+                        <svg>
+                            <use href="#icon-arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button class="slider-nav slider-next" aria-label="Next slide">
+                        <svg>
+                            <use href="#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Services Intro Section -->
+            <section class="services-intro-section">
+                <div class="services-intro">
+                    <!-- Contact Box -->
+                    <div class="contact-box col">
+                        <span class="svg-icon" style="width:65px; height:65px; color:#9cc212;">
+                            <svg>
+                                <use href="#icon-smartphone"></use>
+                            </svg>
+                        </span>
+                        <div class="contact-info">
+                            <h3 class="title">Contact 
+                                <br>Now.</h3>
+                            <p class="phone">+93 78 772 7204</p>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 1 -->
+                    <div class="service-card service-card-1" style="background-image: url('images/services-1.jpg');">
+                        <div class="service-card-content">
+                            <div class="icon-wrapper">
+                                <span class="svg-icon" style="width:40px; height:40px;">
+                                    <svg>
+                                        <use href="#icon-sprout"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="title">Quality Products</h3>
+                            <p class="description">As Naturwin, we are consciously working with our expert staff to
+                                produce the best products.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="service-card service-card-2" style="background-image: url('images/services-2.jpg');">
+                        <div class="service-card-content">
+                            <div class="icon-wrapper">
+                                <span class="svg-icon" style="width:40px; height:40px;">
+                                    <svg>
+                                        <use href="#icon-insurance"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="title">Corporate Service</h3>
+                            <p class="description">In order to provide the best service to you, we work in an
+                                operational and institutional manner with each unit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What We Do Section -->
+            <section class="what-we-do">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>What are we doing?</h2>
+                        <p>The best quality, the best service, the fastest and easiest way to deliver to our valued
+                            customers.</p>
+                    </div>
+
+                    <div class="features-grid">
+                        <!-- Feature 1 -->
+                        <div class="feature-box">
+                            <div class="icon-wrapper">
+                                <span class="svg-icon" style="width:60px; height:60px; color:#9cc212;">
+                                    <svg>
+                                        <use href="#icon-consulting"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="title">Expert Staff</h3>
+                            <p class="description">We are producing as a result of long research and experimentation of
+                                expert engineer staff.</p>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="feature-box">
+                            <div class="icon-wrapper">
+                                <span class="svg-icon" style="width:60px; height:60px; color:#9cc212;">
+                                    <svg>
+                                        <use href="#icon-park"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="title">Nature Friendly</h3>
+                            <p class="description">Our products are produced using organic raw materials with
+                                environmental awareness.</p>
+                        </div>
+
+                        <!-- Feature 3 -->
+                        <div class="feature-box">
+                            <div class="icon-wrapper">
+                                <span class="svg-icon" style="width:60px; height:60px; color:#9cc212;">
+                                    <svg>
+                                        <use href="#icon-blueprint"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="title">Fast Access</h3>
+                            <p class="description">Our Reseller channel and our products through our distribution
+                                method, can be obtained easily in many parts of Turkey.</p>
+                        </div>
+
+                        <!-- Feature 4 -->
+                        <div class="feature-box">
+                            <div class="icon-wrapper">
+                                <span class="svg-icon" style="width:60px; height:60px; color:#9cc212;">
+                                    <svg>
+                                        <use href="#icon-gardening"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <h3 class="title">Supports Growth</h3>
+                            <p class="description">Increases the rate of plant growth and growth by increasing the
+                                amount of low organic matter in the soil.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section class="testimonials">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Testimonials</h2>
+                        <p>"Valuable" comments from our "valued" customers.</p>
+                    </div>
+
+                    <div class="testimonial-slider">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <span class="svg-icon quote-icon" style="width:40px; height:40px; color:#9cc212;">
+                                    <svg>
+                                        <use href="#icon-quotation"></use>
+                                    </svg>
+                                </span>
+                                <p class="testimonial-text">"I thank them for their work. Our products have naturally
+                                    increased their yields."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="images/testimonial-1.png" alt="Hüseyin A.">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Hüseyin A.</h4>
+                                    <p class="location">Konya</p>
+                                    <span class="star-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-item">
+                            <div class="testimonial-content">
+                                <span class="svg-icon quote-icon" style="width:40px; height:40px; color:#9cc212;">
+                                    <svg>
+                                        <use href="#icon-quotation"></use>
+                                    </svg>
+                                </span>
+                                <p class="testimonial-text">"Thanks to the naturwin we have used for our products for
+                                    years, we have never been a victim. We thank you."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="images/testimonial-2.png" alt="Nazmi Ç.">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Nazmi Ç.</h4>
+                                    <p class="location">Bursa</p>
+                                    <span class="star-rating">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer Widgets -->
+        <div id="footer-widgets" class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Column 1 - Logo -->
+                    <div class="footer-col">
+                        <div class="logo">
+                            <h3 style="color: #2d5016; font-size: 24px; margin: 0 0 10px 0;">Farmer Group</h3>
+                            <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">Providing quality agricultural products and fertilizers to farmers for better yield and sustainable farming.</p>
+                        </div>
+                    </div>
+
+                    <!-- Footer Column 2 - Menu -->
+                    <div class="footer-col footer-menu">
+                        <h4 class="widget-title">Menü</h4>
+                        <ul>
+                            <li><a href="index.html">Homepage</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Footer Column 3 - Working Hours -->
+                    <div class="footer-col working-hours">
+                        <h4 class="widget-title">Working Hours</h4>
+                        <div class="working">
+                            <div><span>Weekdays:</span></div>
+                            <div>09:00 - 18:00</div>
+                        </div>
+                        <div class="working">
+                            <div><span>Weekend:</span></div>
+                            <div>Saturday: 09:00 - 15:00<br>Sunday: Closed</div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Column 4 - Newsletter -->
+                    <div class="footer-col newsletter">
+                        <h4 class="widget-title">Subscribe</h4>
+                        <p>You can subscribe to new products and campaigns.</p>
+                        <form class="newsletter-form" id="newsletter-form">
+                            <input type="email" name="email" placeholder="Your Email Address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Copyright -->
+        <footer id="colophon" class="site-footer">
+            <div class="container footer-info">
+                <p>Build By <a href="https://www.kaleemify.com">Kaleemify</a> | Copyright © 2010 - 2026 All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-header">
+            <img src="images/logo.png" alt="Naturwin" style="max-width: 150px;">
+            <div class="close-mobile-nav" id="close-mobile-nav"></div>
+        </div>
+        <ul class="menu">
+            <li class="current-menu-item"><a href="index.html">Homepage</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li class="menu-item-has-children">
+                <a href="products.html">Products</a>
+                <ul class="sub-menu">
+                    <li><a href="fertilizer.html">Fertilizer</a></li>
+                    <li><a href="vegetable.html">Vegetable Seeds</a></li>
+                    <li><a href="fruit.html">Fruit Seeds</a></li>
+                    <li><a href="pesticide.html">Pesticides</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- Mobile Bottom Bar -->
+    <div class="mobile-bottom-bar">
+        <div class="bar-content">
+            <a href="https://goo.gl/maps/Cq4EWJgB1cn36iQV9" class="bar-item" title="Location">
+                <i class="fa fa-map-marker"></i>
+            </a>
+            <a href="mailto:info@farmergroupaf.com" class="bar-item" title="Email">
+                <i class="fa fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/93787727204" class="bar-item" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        /**
+ * Naturwin - Main JavaScript
+ * Standalone version rebuilt from WordPress
+ */
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // ============================================
+            // Hero Slider
+            // ============================================
+
+            const sliderInit = () => {
+                const slides = document.querySelectorAll('.slide');
+                const prevBtn = document.querySelector('.slider-prev');
+                const nextBtn = document.querySelector('.slider-next');
+                let currentSlide = 0;
+                let slideInterval;
+                const intervalTime = 7000; // 7 seconds
+
+                if (slides.length === 0) return;
+
+                // Show specific slide
+                const showSlide = (index) => {
+                    slides.forEach((slide, i) => {
+                        slide.classList.remove('active');
+                        if (i === index) {
+                            slide.classList.add('active');
+                        }
+                    });
+                };
+
+                // Next slide
+                const nextSlide = () => {
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    showSlide(currentSlide);
+                };
+
+                // Previous slide
+                const prevSlide = () => {
+                    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                    showSlide(currentSlide);
+                };
+
+                // Auto play
+                const startAutoPlay = () => {
+                    slideInterval = setInterval(nextSlide, intervalTime);
+                };
+
+                const stopAutoPlay = () => {
+                    clearInterval(slideInterval);
+                };
+
+                // Event listeners
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', () => {
+                        stopAutoPlay();
+                        nextSlide();
+                        startAutoPlay();
+                    });
+                }
+
+                if (prevBtn) {
+                    prevBtn.addEventListener('click', () => {
+                        stopAutoPlay();
+                        prevSlide();
+                        startAutoPlay();
+                    });
+                }
+
+                // Touch support for mobile
+                let touchStartX = 0;
+                let touchEndX = 0;
+                const sliderContainer = document.querySelector('.slider-container');
+
+                if (sliderContainer) {
+                    sliderContainer.addEventListener('touchstart', (e) => {
+                        touchStartX = e.changedTouches[0].screenX;
+                    }, { passive: true });
+
+                    sliderContainer.addEventListener('touchend', (e) => {
+                        touchEndX = e.changedTouches[0].screenX;
+                        handleSwipe();
+                    }, { passive: true });
+                }
+
+                const handleSwipe = () => {
+                    const swipeThreshold = 50;
+                    const diff = touchStartX - touchEndX;
+
+                    if (Math.abs(diff) > swipeThreshold) {
+                        stopAutoPlay();
+                        if (diff > 0) {
+                            nextSlide();
+                        } else {
+                            prevSlide();
+                        }
+                        startAutoPlay();
+                    }
+                };
+
+                // Start auto play
+                startAutoPlay();
+
+                // Pause on hover (desktop)
+                if (sliderContainer) {
+                    sliderContainer.addEventListener('mouseenter', stopAutoPlay);
+                    sliderContainer.addEventListener('mouseleave', startAutoPlay);
+                }
+            };
+
+            // ============================================
+            // Mobile Navigation
+            // ============================================
+
+            const mobileNavInit = () => {
+                const menuToggle = document.getElementById('menu-toggle');
+                const mobileNav = document.getElementById('mobile-nav');
+                const closeNav = document.getElementById('close-mobile-nav');
+                const navOverlay = document.getElementById('nav-overlay');
+
+                if (!menuToggle || !mobileNav) return;
+
+                // Open mobile nav
+                menuToggle.addEventListener('click', () => {
+                    mobileNav.classList.add('active');
+                    navOverlay.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+
+                // Close mobile nav
+                const closeMobileNav = () => {
+                    mobileNav.classList.remove('active');
+                    navOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                };
+
+                if (closeNav) {
+                    closeNav.addEventListener('click', closeMobileNav);
+                }
+
+                if (navOverlay) {
+                    navOverlay.addEventListener('click', closeMobileNav);
+                }
+
+                // Handle submenu toggle
+                const menuItemsWithChildren = mobileNav.querySelectorAll('.menu-item-has-children');
+
+                menuItemsWithChildren.forEach(item => {
+                    const link = item.querySelector('a');
+
+                    link.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        item.classList.toggle('open');
+                    });
+                });
+            };
+
+            // ============================================
+            // Testimonials Slider (Dots)
+            // ============================================
+
+            const testimonialsInit = () => {
+                const dots = document.querySelectorAll('.testimonial-dots .dot');
+                const testimonials = document.querySelectorAll('.testimonial-item');
+
+                if (dots.length === 0) return;
+
+                dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => {
+                        // Update dots
+                        dots.forEach(d => d.classList.remove('active'));
+                        dot.classList.add('active');
+
+                        // Scroll to testimonial (for mobile)
+                        if (window.innerWidth <= 768 && testimonials[index]) {
+                            testimonials[index].scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'nearest',
+                                inline: 'start'
+                            });
+                        }
+                    });
+                });
+            };
+
+            // ============================================
+            // Smooth Scroll for Anchor Links
+            // ============================================
+
+            const smoothScrollInit = () => {
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        const href = this.getAttribute('href');
+
+                        if (href === '#') return;
+
+                        const target = document.querySelector(href);
+
+                        if (target) {
+                            e.preventDefault();
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    });
+                });
+            };
+
+            // ============================================
+            // Header Sticky (Optional)
+            // ============================================
+
+            const stickyHeaderInit = () => {
+                const header = document.querySelector('.site-header');
+                if (!header) return;
+
+                let lastScroll = 0;
+                const headerHeight = header.offsetHeight;
+
+                window.addEventListener('scroll', () => {
+                    const currentScroll = window.pageYOffset;
+
+                    if (currentScroll <= 0) {
+                        header.classList.remove('scroll-up');
+                        return;
+                    }
+
+                    if (currentScroll > lastScroll && !header.classList.contains('scroll-down')) {
+                        // Scrolling down
+                        header.classList.remove('scroll-up');
+                        header.classList.add('scroll-down');
+                    } else if (currentScroll < lastScroll && header.classList.contains('scroll-down')) {
+                        // Scrolling up
+                        header.classList.remove('scroll-down');
+                        header.classList.add('scroll-up');
+                    }
+
+                    lastScroll = currentScroll;
+                }, { passive: true });
+            };
+
+            // ============================================
+            // Newsletter Form
+            // ============================================
+
+            const newsletterInit = () => {
+                const form = document.getElementById('newsletter-form');
+
+                if (!form) return;
+
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+
+                    const email = form.querySelector('input[type="email"]').value;
+
+                    if (email) {
+                        // Show success message (in production, this would submit to a server)
+                        alert('Thank you for subscribing! We will keep you updated.');
+                        form.reset();
+                    }
+                });
+            };
+
+            // ============================================
+            // Dropdown Menu (Desktop)
+            // ============================================
+
+            const dropdownInit = () => {
+                const menuItems = document.querySelectorAll('.main-nav .menu-item-has-children');
+
+                menuItems.forEach(item => {
+                    item.addEventListener('mouseenter', () => {
+                        const submenu = item.querySelector('.sub-menu');
+                        if (submenu) {
+                            submenu.style.opacity = '1';
+                            submenu.style.visibility = 'visible';
+                            submenu.style.transform = 'translateY(0)';
+                        }
+                    });
+
+                    item.addEventListener('mouseleave', () => {
+                        const submenu = item.querySelector('.sub-menu');
+                        if (submenu) {
+                            submenu.style.opacity = '0';
+                            submenu.style.visibility = 'hidden';
+                            submenu.style.transform = 'translateY(10px)';
+                        }
+                    });
+                });
+            };
+
+            // ============================================
+            // Lazy Loading Images (Performance)
+            // ============================================
+
+            const lazyLoadInit = () => {
+                if ('IntersectionObserver' in window) {
+                    const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+
+                    const imageObserver = new IntersectionObserver((entries, observer) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                const img = entry.target;
+                                img.src = img.dataset.src || img.src;
+                                img.classList.add('loaded');
+                                observer.unobserve(img);
+                            }
+                        });
+                    });
+
+                    lazyImages.forEach(img => imageObserver.observe(img));
+                }
+            };
+
+            // ============================================
+            // Animation on Scroll (Simple)
+            // ============================================
+
+            const animateOnScrollInit = () => {
+                const animatedElements = document.querySelectorAll('.feature-box, .service-card, .testimonial-item');
+
+                if ('IntersectionObserver' in window) {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.style.opacity = '1';
+                                entry.target.style.transform = 'translateY(0)';
+                            }
+                        });
+                    }, {
+                        threshold: 0.1,
+                        rootMargin: '0px 0px -50px 0px'
+                    });
+
+                    animatedElements.forEach(el => {
+                        el.style.opacity = '0';
+                        el.style.transform = 'translateY(20px)';
+                        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                        observer.observe(el);
+                    });
+                } else {
+                    // Fallback for browsers without IntersectionObserver
+                    animatedElements.forEach(el => {
+                        el.style.opacity = '1';
+                        el.style.transform = 'translateY(0)';
+                    });
+                }
+            };
+
+            // ============================================
+            // Initialize All Functions
+            // ============================================
+
+            sliderInit();
+            mobileNavInit();
+            testimonialsInit();
+            smoothScrollInit();
+            // stickyHeaderInit(); // Uncomment if you want sticky header
+            newsletterInit();
+            dropdownInit();
+            lazyLoadInit();
+            animateOnScrollInit();
+
+            // Log initialization
+            console.log('Naturwin website initialized successfully.');
+        });
+
+        // ============================================
+        // Utility Functions
+        // ============================================
+
+        // Debounce function for performance
+        function debounce(func, wait = 20, immediate = true) {
+            let timeout;
+            return function () {
+                const context = this, args = arguments;
+                const later = function () {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                const callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
+        }
+
+        // Throttle function for scroll events
+        function throttle(func, limit) {
+            let lastFunc;
+            let lastRan;
+            return function () {
+                const context = this;
+                const args = arguments;
+                if (!lastRan) {
+                    func.apply(context, args);
+                    lastRan = Date.now();
+                } else {
+                    clearTimeout(lastFunc);
+                    lastFunc = setTimeout(function () {
+                        if ((Date.now() - lastRan) >= limit) {
+                            func.apply(context, args);
+                            lastRan = Date.now();
+                        }
+                    }, limit - (Date.now() - lastRan));
+                }
+            };
+        }
+
+    </script>
+</body>
+
+</html>

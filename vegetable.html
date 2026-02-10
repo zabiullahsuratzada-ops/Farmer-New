@@ -503,6 +503,15 @@
             line-height: 1.4;
         }
 
+        .desc-short { display: inline; }
+        .desc-dots { display: inline; }
+        .desc-full { display: none; }
+        .product-description.expanded .desc-short { display: none; }
+        .product-description.expanded .desc-dots { display: none; }
+        .product-description.expanded .desc-full { display: inline; }
+        .read-more-btn { background: none; border: none; color: var(--primary-color); cursor: pointer; font-size: 14px; font-weight: 600; padding: 0; margin-left: 3px; transition: var(--transition); }
+        .read-more-btn:hover { color: var(--primary-dark); text-decoration: underline; }
+
         .product-price {
             font-weight: 700;
             color: var(--text-dark);
@@ -1407,9 +1416,61 @@
             };
 
             // ============================================
+            // Read More / Read Less Functionality
+            // ============================================
+
+            const readMoreInit = () => {
+                const descriptions = document.querySelectorAll('.product-description');
+                descriptions.forEach(desc => {
+                    const fullText = desc.textContent.trim();
+                    if (fullText.length > 50) {
+                        const shortText = fullText.substring(0, 50);
+                        
+                        // Clear and rebuild the description structure
+                        desc.innerHTML = '';
+                        
+                        const shortSpan = document.createElement('span');
+                        shortSpan.className = 'desc-short';
+                        shortSpan.textContent = shortText;
+                        
+                        const dotsSpan = document.createElement('span');
+                        dotsSpan.className = 'desc-dots';
+                        dotsSpan.textContent = '...';
+                        
+                        const fullSpan = document.createElement('span');
+                        fullSpan.className = 'desc-full';
+                        fullSpan.textContent = fullText;
+                        
+                        const readMoreBtn = document.createElement('button');
+                        readMoreBtn.className = 'read-more-btn';
+                        readMoreBtn.textContent = 'Read More';
+                        readMoreBtn.type = 'button';
+                        
+                        desc.appendChild(shortSpan);
+                        desc.appendChild(dotsSpan);
+                        desc.appendChild(fullSpan);
+                        desc.appendChild(readMoreBtn);
+                        
+                        readMoreBtn.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            const isExpanded = desc.classList.contains('expanded');
+                            if (!isExpanded) {
+                                desc.classList.add('expanded');
+                                readMoreBtn.textContent = 'Read Less';
+                            } else {
+                                desc.classList.remove('expanded');
+                                readMoreBtn.textContent = 'Read More';
+                            }
+                        });
+                    }
+                });
+            };
+
+            // ============================================
             // Initialize All Functions
             // ============================================
 
+            readMoreInit();
             mobileNavInit();
             dropdownInit();
             animateOnScrollInit();

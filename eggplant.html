@@ -71,6 +71,14 @@
         .product-category { color: var(--primary-color); font-size: 13px; text-transform: uppercase; font-weight: 500; margin-bottom: 5px; }
         .product-title { font-size: 18px; color: var(--secondary-color); margin-bottom: 10px; }
         .product-description { font-size: 14px; color: var(--text-light); margin: 10px 0; line-height: 1.4; }
+        .desc-short { display: inline; }
+        .desc-dots { display: inline; }
+        .desc-full { display: none; }
+        .product-description.expanded .desc-short { display: none; }
+        .product-description.expanded .desc-dots { display: none; }
+        .product-description.expanded .desc-full { display: inline; }
+        .read-more-btn { background: none; border: none; color: var(--primary-color); cursor: pointer; font-size: 14px; font-weight: 600; padding: 0; margin-left: 3px; transition: var(--transition); }
+        .read-more-btn:hover { color: var(--primary-dark); text-decoration: underline; }
         .product-btn { display: inline-block; padding: 10px 20px; border: 1px solid var(--primary-color); color: var(--primary-color); border-radius: 20px; font-size: 14px; font-weight: 500; transition: var(--transition); margin-top: auto; }
         .product-item:hover .product-btn { background-color: var(--primary-color); color: var(--white); }
         .footer-widgets { background-color: var(--secondary-color); padding: 60px 0; color: var(--white); }
@@ -310,6 +318,52 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
+            // Handle Read More / Read Less functionality
+            const descriptions = document.querySelectorAll('.product-description');
+            descriptions.forEach(desc => {
+                const fullText = desc.textContent.trim();
+                if (fullText.length > 50) {
+                    const shortText = fullText.substring(0, 50);
+                    
+                    // Clear and rebuild the description structure
+                    desc.innerHTML = '';
+                    
+                    const shortSpan = document.createElement('span');
+                    shortSpan.className = 'desc-short';
+                    shortSpan.textContent = shortText;
+                    
+                    const dotsSpan = document.createElement('span');
+                    dotsSpan.className = 'desc-dots';
+                    dotsSpan.textContent = '...';
+                    
+                    const fullSpan = document.createElement('span');
+                    fullSpan.className = 'desc-full';
+                    fullSpan.textContent = fullText;
+                    
+                    const readMoreBtn = document.createElement('button');
+                    readMoreBtn.className = 'read-more-btn';
+                    readMoreBtn.textContent = 'Read More';
+                    readMoreBtn.type = 'button';
+                    
+                    desc.appendChild(shortSpan);
+                    desc.appendChild(dotsSpan);
+                    desc.appendChild(fullSpan);
+                    desc.appendChild(readMoreBtn);
+                    
+                    readMoreBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const isExpanded = desc.classList.contains('expanded');
+                        if (!isExpanded) {
+                            desc.classList.add('expanded');
+                            readMoreBtn.textContent = 'Read Less';
+                        } else {
+                            desc.classList.remove('expanded');
+                            readMoreBtn.textContent = 'Read More';
+                        }
+                    });
+                }
+            });
+
             const menuToggle = document.getElementById('menu-toggle');
             const mobileNav = document.getElementById('mobile-nav');
             const closeNav = document.getElementById('close-mobile-nav');

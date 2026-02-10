@@ -5,25 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Farmer Group - Best Quality Fruit Seeds. Grow fresh and healthy fruits with our premium seeds.">
-    <title>Fruit Seeds - Farmer Group</title>
-
-    <!-- Google Fonts -->
+        content="Farmer Group - Premium Watermelon Seeds. High quality watermelon varieties for your farm.">
+    <title>Watermelon Seeds - Farmer Group</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <style>
-        /* ============================================
-   FARMER GROUP - Product Listing CSS
-   ============================================ */
-
-        /* Use same CSS as fertilizer.html, copied here for self-contained file */
-
-        /* ---------- CSS Variables ---------- */
         :root {
             --primary-color: #9cc212;
             --primary-dark: #87af26;
@@ -31,18 +19,13 @@
             --text-dark: #2e2e2e;
             --text-light: #666666;
             --white: #ffffff;
-            --black: #000000;
-            --gray-light: #f5f5f5;
             --gray-medium: #ebebeb;
             --font-primary: 'Poppins', Arial, sans-serif;
             --font-secondary: 'Rubik', Arial, sans-serif;
             --transition: all 0.3s ease;
         }
 
-        /* ---------- Reset & Base Styles ---------- */
-        *,
-        *::before,
-        *::after {
+        * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -58,7 +41,6 @@
             line-height: 1.6;
             color: var(--text-dark);
             background-color: var(--white);
-            overflow-x: hidden;
             max-width: 1500px;
             margin: auto;
         }
@@ -110,29 +92,6 @@
             padding: 80px 0;
         }
 
-        /* ---------- Utility Classes ---------- */
-        .text-center {
-            text-align: center;
-        }
-
-        .text-left {
-            text-align: left;
-        }
-
-        .text-right {
-            text-align: right;
-        }
-
-        .text-white {
-            color: var(--white);
-        }
-
-        .clearfix::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
         .row {
             display: flex;
             flex-wrap: wrap;
@@ -143,87 +102,10 @@
             padding: 0 15px;
         }
 
-        /* Grid System */
-        .col-12 {
-            width: 100%;
-        }
-
         .col-lg-3 {
             width: 25%;
         }
 
-        /* ---------- Top Bar ---------- */
-        .topbar {
-            background-color: var(--secondary-color);
-            color: var(--white);
-            padding: 10px 0;
-            font-size: 14px;
-        }
-
-        .topbar-widgets {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .topbar .row {
-            align-items: center;
-        }
-
-        .sidebar-left {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-        }
-
-        .sidebar-left .widget {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .sidebar-left .svg-icon {
-            width: 16px;
-            height: 16px;
-            fill: var(--primary-color);
-        }
-
-        .sidebar-right {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 20px;
-        }
-
-        .sidebar-right ul {
-            display: flex;
-            gap: 20px;
-        }
-
-        .sidebar-right ul li a {
-            color: var(--white);
-        }
-
-        .sidebar-right ul li a:hover {
-            color: var(--primary-color);
-        }
-
-        /* Social Icons */
-        .socials {
-            display: flex;
-            gap: 15px;
-        }
-
-        .socials li a {
-            color: var(--white);
-            font-size: 14px;
-        }
-
-        .socials li a:hover {
-            color: var(--primary-color);
-        }
-
-        /* ---------- Header ---------- */
         .site-header {
             background-color: var(--white);
             position: relative;
@@ -254,7 +136,6 @@
             display: none;
         }
 
-        /* Header Highlights */
         .highlights {
             display: flex;
             justify-content: flex-end;
@@ -281,13 +162,6 @@
             font-size: 14px;
         }
 
-        .highlights .widget .pull-right .svg-icon {
-            width: 45px;
-            height: 45px;
-            fill: var(--primary-color);
-        }
-
-        /* ---------- Navigation ---------- */
         .header-menu {
             background-color: var(--secondary-color);
         }
@@ -317,20 +191,18 @@
         }
 
         .main-nav .menu>li>a:hover,
-        .main-nav .menu>li.current-menu-item>a,
         .main-nav .menu>li:hover>a {
             background-color: var(--primary-color);
             color: var(--white);
         }
 
-        /* Dropdown Menu */
         .main-nav .menu>li .sub-menu {
             position: absolute;
             top: 100%;
             left: 0;
             background-color: var(--white);
             min-width: 220px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 30px rgb(0, 0, 0);
             opacity: 0;
             visibility: hidden;
             transform: translateY(10px);
@@ -357,47 +229,12 @@
             color: var(--white);
         }
 
-        /* Mobile Menu Toggle */
         .navbar-toggle {
             display: none;
             cursor: pointer;
             padding: 10px;
         }
 
-        .navbar-icon {
-            display: block;
-            width: 30px;
-            height: 20px;
-            position: relative;
-        }
-
-        .navbars-line,
-        .navbars-line::before,
-        .navbars-line::after {
-            display: block;
-            width: 100%;
-            height: 3px;
-            background-color: var(--secondary-color);
-            position: absolute;
-            transition: var(--transition);
-        }
-
-        .navbars-line {
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .navbars-line::before {
-            content: '';
-            top: -8px;
-        }
-
-        .navbars-line::after {
-            content: '';
-            bottom: -8px;
-        }
-
-        /* ---------- Page Header (Breadcrumb) ---------- */
         .page-header {
             background-color: var(--secondary-color);
             padding: 50px 0;
@@ -423,15 +260,10 @@
             color: rgba(255, 255, 255, 0.8);
         }
 
-        .breadcrumb a:hover {
-            color: var(--primary-color);
-        }
-
         .breadcrumb .separator {
             color: var(--primary-color);
         }
 
-        /* ---------- Product Listing Section ---------- */
         .product-grid {
             display: flex;
             flex-wrap: wrap;
@@ -459,7 +291,6 @@
         .product-image {
             height: 250px;
             overflow: hidden;
-            position: relative;
         }
 
         .product-image img {
@@ -496,12 +327,6 @@
             margin-bottom: 10px;
         }
 
-        .product-price {
-            font-weight: 600;
-            color: rgba(0, 0, 0, 0.507);
-            margin-bottom: 15px;
-        }
-
         .product-btn {
             display: inline-block;
             padding: 10px 20px;
@@ -519,16 +344,10 @@
             color: var(--white);
         }
 
-        /* ---------- Footer Widgets ---------- */
         .footer-widgets {
             background-color: var(--secondary-color);
             padding: 60px 0;
             color: var(--white);
-        }
-
-        .footer-widgets .row {
-            display: flex;
-            flex-wrap: wrap;
         }
 
         .footer-col {
@@ -543,15 +362,6 @@
             font-weight: 600;
         }
 
-        .footer-col .logo {
-            margin-bottom: 20px;
-        }
-
-        .footer-col .logo img {
-            max-width: 200px;
-        }
-
-        /* Footer Menu */
         .footer-menu ul {
             display: flex;
             flex-direction: column;
@@ -567,7 +377,6 @@
             color: var(--primary-color);
         }
 
-        /* Working Hours */
         .working-hours .working {
             margin-bottom: 20px;
         }
@@ -577,26 +386,13 @@
             font-weight: 500;
         }
 
-        .working-hours .working div {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 14px;
-            line-height: 1.7;
-        }
-
-        /* Newsletter */
-        .newsletter p {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-
         .newsletter-form {
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
 
-        .newsletter-form input[type="email"] {
+        .newsletter-form input {
             width: 100%;
             padding: 12px 15px;
             border: none;
@@ -621,7 +417,6 @@
             background-color: var(--primary-dark);
         }
 
-        /* ---------- Footer Copyright ---------- */
         .site-footer {
             background-color: #0b2112;
             padding: 20px 0;
@@ -634,7 +429,33 @@
             color: var(--white);
         }
 
-        /* ---------- Mobile Nav ---------- */
+        .topbar-mobile {
+            background-color: var(--secondary-color);
+            padding: 12px 0;
+            color: var(--white);
+        }
+
+        .topbar-mobile-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .topbar-mobile .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            font-size: 13px;
+        }
+
+        .topbar-mobile .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
         .mobile-nav {
             position: fixed;
             top: 0;
@@ -704,44 +525,6 @@
             color: var(--primary-color);
         }
 
-        .mobile-nav .sub-menu {
-            padding-left: 20px;
-            display: none;
-        }
-
-        .mobile-nav .menu-item-has-children>a::after {
-            content: '+';
-            float: right;
-            font-weight: bold;
-        }
-
-        .mobile-nav .menu-item-has-children.open>a::after {
-            content: '-';
-        }
-
-        .mobile-nav .menu-item-has-children.open .sub-menu {
-            display: block;
-        }
-
-        .nav-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 9998;
-            opacity: 0;
-            visibility: hidden;
-            transition: var(--transition);
-        }
-
-        .nav-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        /* ---------- Mobile Bottom Bar (Touchy Style) ---------- */
         .mobile-bottom-bar {
             display: none;
             position: fixed;
@@ -772,16 +555,7 @@
             background-color: var(--primary-color);
         }
 
-        .mobile-bottom-bar .bar-item i {
-            font-size: 22px;
-        }
-
-        /* ---------- Responsive Styles ---------- */
         @media (max-width: 1024px) {
-            .container {
-                max-width: 960px;
-            }
-
             .col-lg-3 {
                 width: 33.333%;
             }
@@ -803,20 +577,6 @@
         }
 
         @media (max-width: 768px) {
-
-            /* Topbar */
-            .topbar {
-                display: none;
-            }
-
-            .topbar-mobile {
-                display: block;
-                background-color: var(--secondary-color);
-                padding: 10px 0;
-                text-align: center;
-            }
-
-            /* Header */
             .navbar-toggle {
                 display: block;
             }
@@ -830,7 +590,6 @@
                 margin-left: 15px;
             }
 
-            /* Page Header */
             .page-header {
                 padding: 40px 0;
             }
@@ -839,12 +598,10 @@
                 font-size: 28px;
             }
 
-            /* Footer */
             .footer-col {
                 flex: 0 0 100%;
             }
 
-            /* Mobile Bottom Bar */
             .mobile-bottom-bar {
                 display: block;
             }
@@ -862,75 +619,11 @@
             .col-lg-3 {
                 width: 100%;
             }
-
-            .product-grid {
-                row-gap: 20px;
-            }
-        }
-
-        /* ---------- SVG Icons ---------- */
-        .svg-icon {
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .svg-icon svg {
-            width: 100%;
-            height: 100%;
-            fill: currentColor;
-        }
-
-        /* Topbar Mobile */
-        .topbar-mobile {
-            background-color: var(--secondary-color);
-            padding: 12px 0;
-            color: var(--white);
-        }
-
-        .topbar-mobile-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .topbar-mobile .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            font-size: 13px;
-            color: var(--white);
-        }
-
-        .topbar-mobile .contact-info span {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .topbar-mobile .contact-info .svg-icon {
-            width: 14px;
-            height: 14px;
-            fill: var(--primary-color);
-        }
-
-        /* Animation Classes */
-        .animate-fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-
-        .animate-fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
         }
     </style>
 </head>
 
 <body>
-    <!-- SVG Icons Definition (Same as homepage) -->
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="icon-phone" viewBox="0 0 512 512">
             <path
@@ -950,62 +643,35 @@
         </symbol>
     </svg>
 
-    <!-- Page Wrapper -->
     <div id="page" class="site">
-
-
-        <!-- Header -->
         <header id="masthead" class="site-header">
-            <!-- Mobile Topbar -->
             <div class="topbar-mobile">
                 <div class="container">
                     <div class="topbar-mobile-content">
                         <div class="contact-info">
-                            <span>
-                                <span class="svg-icon">
-                                    <svg>
-                                        <use href="#icon-phone"></use>
-                                    </svg>
-                                </span>
-                                +93 78 772 7204
-                            </span>
-                            <span>
-                                <span class="svg-icon">
-                                    <svg>
-                                        <use href="#icon-envelope"></use>
-                                    </svg>
-                                </span>
-                                info@farmergroup.com
-                            </span>
+                            <span><svg style="width:14px;height:14px;fill:#9cc212;">
+                                    <use href="#icon-phone"></use>
+                                </svg> +93 78 772 7204</span>
+                            <span><svg style="width:14px;height:14px;fill:#9cc212;">
+                                    <use href="#icon-envelope"></use>
+                                </svg> info@farmergroup.com</span>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="header-main">
-                <!-- Header Bar -->
                 <div class="header-bar">
                     <div class="container">
                         <div class="header-row">
                             <div class="site-logo">
-                                <a href="index.html" class="logo">
-                                    <img src="images/logo.png" alt="Farmer Group" class="logo-main">
-                                </a>
-                                <h1 class="site-title">Farmer Group</h1>
+                                <a href="index.html"><img src="images/logo.png" alt="Farmer Group"></a>
                             </div>
-
                             <div class="highlights">
                                 <div class="widget">
                                     <div class="pull-left">
                                         <div>Leading in Quality</div>
                                         <div>For Best Food</div>
-                                    </div>
-                                    <div class="pull-right">
-                                        <span class="svg-icon" style="width:45px; height:45px; color:#9cc212;">
-                                            <svg>
-                                                <use href="#icon-best"></use>
-                                            </svg>
-                                        </span>
                                     </div>
                                 </div>
                                 <div class="widget">
@@ -1013,139 +679,117 @@
                                         <div>Farmer's Choice</div>
                                         <div>Quality in Manure</div>
                                     </div>
-                                    <div class="pull-right">
-                                        <span class="svg-icon" style="width:45px; height:45px; color:#9cc212;">
-                                            <svg>
-                                                <use href="#icon-user"></use>
-                                            </svg>
-                                        </span>
-                                    </div>
                                 </div>
                             </div>
-
-                            <div class="navbar-toggle" id="menu-toggle">
-                                <span class="navbar-icon">
-                                    <span class="navbars-line"></span>
-                                </span>
-                            </div>
+                            <div class="navbar-toggle" id="menu-toggle"><span class="navbar-icon"></span></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Header Menu -->
                 <div class="header-menu">
                     <div class="container">
-                        <div class="site-menu">
-                            <nav id="site-navigation" class="main-nav">
-                                <ul class="menu">
-                                    <li><a href="index.html">Homepage</a></li>
-                                    <li><a href="about.html">About us</a></li>
-                                    <li class="menu-item-has-children current-menu-item">
-                                        <a href="#">Products</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="vegetable.html">Vegetable Seeds</a></li>
-                                            <li><a href="fruit.html">Fruit Seeds</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                        <nav id="site-navigation" class="main-nav">
+                            <ul class="menu">
+                                <li><a href="index.html">Homepage</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li class="menu-item-has-children"><a href="#">Products</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="vegetable.html">Vegetable Seeds</a></li>
+                                        <li><a href="fruit.html">Fruit Seeds</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
         </header>
 
-        <!-- Page Header -->
         <section class="page-header">
             <div class="container">
-                <h1>Fruit Seeds</h1>
+                <h1>Watermelon Seeds</h1>
                 <div class="breadcrumb">
-                    <a href="index.html">Home</a>
-                    <span class="separator">/</span>
-                    <a href="products.html">Products</a>
-                    <span class="separator">/</span>
-                    <span>Fruit Seeds</span>
+                    <a href="index.html">Home</a> <span class="separator">/</span>
+                    <a href="fruit.html">Fruit Seeds</a> <span class="separator">/</span>
+                    <span>Watermelon Seeds</span>
                 </div>
             </div>
         </section>
 
-        <!-- Main Content -->
         <div id="content" class="site-content">
-
-            <!-- Product Listing (Categories) -->
             <section class="section-padding">
                 <div class="container">
                     <div class="section-title">
-                        <h2>Our Seed Categories</h2>
-                        <p>Choose a category to explore our curated seed varieties.</p>
+                        <h2>Watermelon Seed Varieties</h2>
+                        <p>Choose from our premium watermelon seed varieties.</p>
                     </div>
 
                     <div class="product-grid">
-                        <!-- Fruit 1 -->
                         <div class="col col-lg-3">
-                            <div class="product-item animate-fade-in">
-                                <div class="product-image">
-                                    <img src="https://hengfruits.com/cdn/shop/files/Melon-Orange-Candy-_Australia_-Heng-Fruits-73568550.jpg?v=1740641789" alt="Melon Seeds">
-                                </div>
+                            <div class="product-item">
+                                <div class="product-image"><img
+                                        src="https://images.unsplash.com/photo-1599599810694-96c50b349b56?w=400&h=300&fit=crop"
+                                        alt="Seedless Watermelon"></div>
                                 <div class="product-content">
                                     <div>
-                                        <h3 class="product-title">Melon Seeds</h3>
-                                        <div class="product-price">Call for Price</div>
+                                        <h3 class="product-title">Seedless Watermelon</h3>
+                                        <div class="product-category">Premium variety</div>
                                     </div>
-                                    <a href="melon.html" class="product-btn">View Products</a>
+                                    <a href="https://wa.me/93787727204" class="product-btn">Contact Us</a>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Fruit 2 -->
                         <div class="col col-lg-3">
-                            <div class="product-item animate-fade-in">
-                                <div class="product-image">
-                                    <img src="https://femina.wwmindia.com/thumb/content/2020/feb/watermelon-seeds-01-thumb1582265978.jpg?width=1200&height=900" alt="Watermelon Seeds">
-                                </div>
+                            <div class="product-item">
+                                <div class="product-image"><img
+                                        src="https://images.unsplash.com/photo-1563307822-b403b488a4a8?w=400&h=300&fit=crop"
+                                        alt="Sugar Baby Watermelon"></div>
                                 <div class="product-content">
                                     <div>
-                                        <h3 class="product-title">Watermelon Seeds</h3>
-                                        <div class="product-price">Call for Price</div>
+                                        <h3 class="product-title">Sugar Baby</h3>
+                                        <div class="product-category">Small variety</div>
                                     </div>
-                                    <a href="watermelon.html" class="product-btn">View Products</a>
+                                    <a href="https://wa.me/93787727204" class="product-btn">Contact Us</a>
                                 </div>
                             </div>
                         </div>
-
-                        
-
+                        <div class="col col-lg-3">
+                            <div class="product-item">
+                                <div class="product-image"><img
+                                        src="https://images.unsplash.com/photo-1599599810694-96c50b349b56?w=400&h=300&fit=crop"
+                                        alt="Crimson Sweet Watermelon"></div>
+                                <div class="product-content">
+                                    <div>
+                                        <h3 class="product-title">Crimson Sweet</h3>
+                                        <div class="product-category">Large variety</div>
+                                    </div>
+                                    <a href="https://wa.me/93787727204" class="product-btn">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-
         </div>
 
-        <!-- Footer Widgets -->
         <div id="footer-widgets" class="footer-widgets">
             <div class="container">
                 <div class="row">
-                    <!-- Footer Column 1 - Logo -->
                     <div class="footer-col">
-                        <div class="logo">
-                            <h3 style="color: #2d5016; font-size: 24px; margin: 0 0 10px 0;">Farmer Group</h3>
-                            <p style="color: #666; font-size: 14px; line-height: 1.6; margin: 0;">Providing quality agricultural products and fertilizers to farmers for better yield and sustainable farming.</p>
-                        </div>
+                        <h3 style="color: #2d5016; font-size: 24px;">Farmer Group</h3>
+                        <p style="color: #666; font-size: 14px;">Providing quality agricultural products for better
+                            yield.</p>
                     </div>
-
-                    <!-- Footer Column 2 - Menu -->
                     <div class="footer-col footer-menu">
                         <h4 class="widget-title">Menu</h4>
                         <ul>
                             <li><a href="index.html">Homepage</a></li>
-                            <li><a href="products.html">Products</a></li>
+                            <li><a href="fruit.html">Products</a></li>
                             <li><a href="about.html">About us</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-
-                    <!-- Footer Column 3 - Working Hours -->
                     <div class="footer-col working-hours">
                         <h4 class="widget-title">Working Hours</h4>
                         <div class="working">
@@ -1154,16 +798,14 @@
                         </div>
                         <div class="working">
                             <div><span>Weekend:</span></div>
-                            <div>Saturday: 09:00 - 15:00<br>Sunday: Closed</div>
+                            <div>Sat: 09:00-15:00 | Sun: Closed</div>
                         </div>
                     </div>
-
-                    <!-- Footer Column 4 - Newsletter -->
                     <div class="footer-col newsletter">
                         <h4 class="widget-title">Subscribe</h4>
-                        <p>You can subscribe to new products and campaigns.</p>
+                        <p>Subscribe to new products and campaigns.</p>
                         <form class="newsletter-form" id="newsletter-form">
-                            <input type="email" name="email" placeholder="Your Email Address" required>
+                            <input type="email" placeholder="Your Email" required>
                             <button type="submit">Subscribe</button>
                         </form>
                     </div>
@@ -1171,17 +813,14 @@
             </div>
         </div>
 
-        <!-- Footer Copyright -->
         <footer id="colophon" class="site-footer">
-            <div class="container footer-info">
+            <div class="container">
                 <p>Build By <a href="https://www.kaleemify.com">Kaleemify</a> | Copyright © 2010 - 2026 All rights
-                    reserved.
-                </p>
+                    reserved.</p>
             </div>
         </footer>
     </div>
 
-    <!-- Mobile Navigation -->
     <div class="mobile-nav" id="mobile-nav">
         <div class="mobile-nav-header">
             <img src="images/logo.png" alt="Farmer Group" style="max-width: 150px;">
@@ -1190,9 +829,8 @@
         <ul class="menu">
             <li><a href="index.html">Homepage</a></li>
             <li><a href="about.html">About us</a></li>
-            <li class="menu-item-has-children open">
-                <a href="#">Products</a>
-                <ul class="sub-menu" style="display: block;">
+            <li class="menu-item-has-children"><a href="#">Products</a>
+                <ul class="sub-menu">
                     <li><a href="vegetable.html">Vegetable Seeds</a></li>
                     <li><a href="fruit.html">Fruit Seeds</a></li>
                 </ul>
@@ -1200,162 +838,34 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
-    <div class="nav-overlay" id="nav-overlay"></div>
 
-    <!-- Mobile Bottom Bar -->
     <div class="mobile-bottom-bar">
         <div class="bar-content">
-            <a href="https://goo.gl/maps/Cq4EWJgB1cn36iQV9" class="bar-item" title="Location">
-                <i class="fa fa-map-marker"></i>
-            </a>
-            <a href="mailto:info@farmergroupaf.com" class="bar-item" title="Email">
-                <i class="fa fa-envelope"></i>
-            </a>
-            <a href="https://wa.me/93787727204" class="bar-item" title="WhatsApp">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
+            <a href="https://goo.gl/maps/Cq4EWJgB1cn36iQV9" class="bar-item"><i class="fa fa-map-marker"></i></a>
+            <a href="mailto:info@farmergroupaf.com" class="bar-item"><i class="fa fa-envelope"></i></a>
+            <a href="https://wa.me/93787727204" class="bar-item"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </div>
 
-    <!-- JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            // ============================================
-            // Mobile Navigation
-            // ============================================
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileNav = document.getElementById('mobile-nav');
+            const closeNav = document.getElementById('close-mobile-nav');
 
-            const mobileNavInit = () => {
-                const menuToggle = document.getElementById('menu-toggle');
-                const mobileNav = document.getElementById('mobile-nav');
-                const closeNav = document.getElementById('close-mobile-nav');
-                const navOverlay = document.getElementById('nav-overlay');
+            if (menuToggle && mobileNav) {
+                menuToggle.addEventListener('click', () => { mobileNav.classList.add('active'); });
+                closeNav.addEventListener('click', () => { mobileNav.classList.remove('active'); });
+            }
 
-                if (!menuToggle || !mobileNav) return;
-
-                // Open mobile nav
-                menuToggle.addEventListener('click', () => {
-                    mobileNav.classList.add('active');
-                    navOverlay.classList.add('active');
-                    document.body.style.overflow = 'hidden';
-                });
-
-                // Close mobile nav
-                const closeMobileNav = () => {
-                    mobileNav.classList.remove('active');
-                    navOverlay.classList.remove('active');
-                    document.body.style.overflow = '';
-                };
-
-                if (closeNav) {
-                    closeNav.addEventListener('click', closeMobileNav);
-                }
-
-                if (navOverlay) {
-                    navOverlay.addEventListener('click', closeMobileNav);
-                }
-
-                // Handle submenu toggle
-                const menuItemsWithChildren = mobileNav.querySelectorAll('.menu-item-has-children');
-
-                menuItemsWithChildren.forEach(item => {
-                    const link = item.querySelector('a');
-
-                    link.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        item.classList.toggle('open');
-                    });
-                });
-            };
-
-            // ============================================
-            // Dropdown Menu (Desktop)
-            // ============================================
-
-            const dropdownInit = () => {
-                const menuItems = document.querySelectorAll('.main-nav .menu-item-has-children');
-
-                menuItems.forEach(item => {
-                    item.addEventListener('mouseenter', () => {
-                        const submenu = item.querySelector('.sub-menu');
-                        if (submenu) {
-                            submenu.style.opacity = '1';
-                            submenu.style.visibility = 'visible';
-                            submenu.style.transform = 'translateY(0)';
-                        }
-                    });
-
-                    item.addEventListener('mouseleave', () => {
-                        const submenu = item.querySelector('.sub-menu');
-                        if (submenu) {
-                            submenu.style.opacity = '0';
-                            submenu.style.visibility = 'hidden';
-                            submenu.style.transform = 'translateY(10px)';
-                        }
-                    });
-                });
-            };
-
-            // ============================================
-            // Animation on Scroll
-            // ============================================
-
-            const animateOnScrollInit = () => {
-                const animatedElements = document.querySelectorAll('.animate-fade-in');
-
-                if ('IntersectionObserver' in window) {
-                    const observer = new IntersectionObserver((entries) => {
-                        entries.forEach(entry => {
-                            if (entry.isIntersecting) {
-                                entry.target.classList.add('visible');
-                            }
-                        });
-                    }, {
-                        threshold: 0.1,
-                        rootMargin: '0px 0px -50px 0px'
-                    });
-
-                    animatedElements.forEach(el => {
-                        observer.observe(el);
-                    });
-                } else {
-                    // Fallback for browsers without IntersectionObserver
-                    animatedElements.forEach(el => {
-                        el.classList.add('visible');
-                    });
-                }
-            };
-
-            // ============================================
-            // Newsletter Form
-            // ============================================
-
-            const newsletterInit = () => {
-                const form = document.getElementById('newsletter-form');
-
-                if (!form) return;
-
+            const form = document.getElementById('newsletter-form');
+            if (form) {
                 form.addEventListener('submit', (e) => {
                     e.preventDefault();
-
-                    const email = form.querySelector('input[type="email"]').value;
-
-                    if (email) {
-                        alert('Thank you for subscribing! We will keep you updated.');
-                        form.reset();
-                    }
+                    alert('Thank you for subscribing!');
+                    form.reset();
                 });
-            };
-
-            // ============================================
-            // Initialize All Functions
-            // ============================================
-
-            mobileNavInit();
-            dropdownInit();
-            animateOnScrollInit();
-            newsletterInit();
-
-            console.log('Farmer Group Fruit Seeds page initialized successfully.');
+            }
         });
     </script>
 </body>

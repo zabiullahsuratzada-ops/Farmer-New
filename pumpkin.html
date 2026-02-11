@@ -334,14 +334,46 @@
             line-height: 1.4;
         }
 
-        .desc-short { display: inline; }
-        .desc-dots { display: inline; }
-        .desc-full { display: none; }
-        .product-description.expanded .desc-short { display: none; }
-        .product-description.expanded .desc-dots { display: none; }
-        .product-description.expanded .desc-full { display: inline; }
-        .read-more-btn { background: none; border: none; color: var(--primary-color); cursor: pointer; font-size: 14px; font-weight: 600; padding: 0; margin-left: 3px; transition: var(--transition); }
-        .read-more-btn:hover { color: var(--primary-dark); text-decoration: underline; }
+        .desc-short {
+            display: inline;
+        }
+
+        .desc-dots {
+            display: inline;
+        }
+
+        .desc-full {
+            display: none;
+        }
+
+        .product-description.expanded .desc-short {
+            display: none;
+        }
+
+        .product-description.expanded .desc-dots {
+            display: none;
+        }
+
+        .product-description.expanded .desc-full {
+            display: inline;
+        }
+
+        .read-more-btn {
+            background: none;
+            border: none;
+            color: var(--primary-color);
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 0;
+            margin-left: 3px;
+            transition: var(--transition);
+        }
+
+        .read-more-btn:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
 
         .product-btn {
             display: inline-block;
@@ -745,13 +777,12 @@
                         <div class="col col-lg-3">
                             <div class="product-item">
                                 <div class="product-image"><img
-                                        src="https://images.unsplash.com/photo-1599599810694-96c50b349b56?w=400&h=300&fit=crop"
+                                        src="images/pum1.png"
                                         alt="Jack-O-Lantern Pumpkin"></div>
                                 <div class="product-content">
                                     <div>
-                                        <h3 class="product-title">Jack-O-Lantern</h3>
-                                        <div class="product-category">Carving variety</div>
-                                        <p class="product-description">Large orange pumpkins perfect for carving and decoration.</p>
+                                        <h3 class="product-title">SHAHIKA F1 GREEN PUMPKIN (AZ-1010) PUMPKIN</h3>
+                                        <p class="product-description">Spring, Autumn, Greenhouse, Outdoor Area</p>
                                     </div>
                                     <a href="https://wa.me/93787727204" class="product-btn">Contact Us</a>
                                 </div>
@@ -760,28 +791,12 @@
                         <div class="col col-lg-3">
                             <div class="product-item">
                                 <div class="product-image"><img
-                                        src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5f5d5?w=400&h=300&fit=crop"
+                                        src="images/pum2.png"
                                         alt="Sugar Pumpkin"></div>
                                 <div class="product-content">
                                     <div>
-                                        <h3 class="product-title">Sugar Pumpkin</h3>
-                                        <div class="product-category">Cooking variety</div>
-                                        <p class="product-description">Small sweet pumpkins ideal for cooking and making pies.</p>
-                                    </div>
-                                    <a href="https://wa.me/93787727204" class="product-btn">Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3">
-                            <div class="product-item">
-                                <div class="product-image"><img
-                                        src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=400&h=300&fit=crop"
-                                        alt="Butternut Pumpkin"></div>
-                                <div class="product-content">
-                                    <div>
-                                        <h3 class="product-title">Butternut Pumpkin</h3>
-                                        <div class="product-category">Storage variety</div>
-                                        <p class="product-description">Golden flesh with rich, nutty flavor. Excellent for soups.</p>
+                                        <h3 class="product-title">AZ-1030 F1 BLACK PUMPKIN</h3>
+                                        <p class="product-description">Spring, Autumn, Greenhouse, Outdoor Area</p>
                                     </div>
                                     <a href="https://wa.me/93787727204" class="product-btn">Contact Us</a>
                                 </div>
@@ -874,32 +889,32 @@
                 const fullText = desc.textContent.trim();
                 if (fullText.length > 50) {
                     const shortText = fullText.substring(0, 50);
-                    
+
                     // Clear and rebuild the description structure
                     desc.innerHTML = '';
-                    
+
                     const shortSpan = document.createElement('span');
                     shortSpan.className = 'desc-short';
                     shortSpan.textContent = shortText;
-                    
+
                     const dotsSpan = document.createElement('span');
                     dotsSpan.className = 'desc-dots';
                     dotsSpan.textContent = '...';
-                    
+
                     const fullSpan = document.createElement('span');
                     fullSpan.className = 'desc-full';
                     fullSpan.textContent = fullText;
-                    
+
                     const readMoreBtn = document.createElement('button');
                     readMoreBtn.className = 'read-more-btn';
                     readMoreBtn.textContent = 'Read More';
                     readMoreBtn.type = 'button';
-                    
+
                     desc.appendChild(shortSpan);
                     desc.appendChild(dotsSpan);
                     desc.appendChild(fullSpan);
                     desc.appendChild(readMoreBtn);
-                    
+
                     readMoreBtn.addEventListener('click', (e) => {
                         e.preventDefault();
                         const isExpanded = desc.classList.contains('expanded');

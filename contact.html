@@ -1166,7 +1166,30 @@
             color: #721c24;
             border: 1px solid #f5c6cb;
         }
-    </style>
+    /* Whatsapp floating button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.whatsapp-float:hover {
+    background-color: #1EBE5D;
+}
+
+</style>
 </head>
 
 <body>
@@ -1627,17 +1650,7 @@
                     </li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-        <div class="bar-content">
-            <a href="https://goo.gl/maps/Cq4EWJgB1cn36iQV9" class="bar-item" title="Location">
-                <i class="fa fa-map-marker"></i>
-            </a>
-            <a href="mailto:info@farmergroupaf.com" class="bar-item" title="Email">
-                <i class="fa fa-envelope"></i>
-            </a>
-            <a href="https://wa.me/93787727204" class="bar-item" title="WhatsApp">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
-        </div>
+
     </div>
 
     <!-- JavaScript -->
@@ -1808,6 +1821,9 @@
             console.log('Farmer Group contact page initialized.');
         });
     </script>
+    <a href="https://wa.me/93787727204" class="whatsapp-float" title="WhatsApp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 </body>
 
 </html>
